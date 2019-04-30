@@ -1,0 +1,244 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../webfonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../webfonts/Montserrat/Montserrat-Italic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../webfonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../webfonts/Montserrat/Montserrat-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+body{margin: 0px; background: #f8f8f8; color: #434649; font-family:'Montserrat', sans-serif; font-weight:normal;} a:hover{ text-decoration:none; color:#fff;} .btn-primary{background: #ffad40; color: #fff; border-color: #cca716; font-family: 'Montserrat';} .btn-primary:hover{background: #f29e18; color: #333; border-color:#f29e18; font-family: 'Montserrat';}
+header{display: block; position: relative; float: left; width: 100%; z-index: 99999; /*background: rgba(0, 0, 0, 0.25);*/} header div{margin: 0px; padding: 0px;} header div.emblem{display: block; position: absolute; width: 120px; padding: 15px; background:  rgba(255, 255, 255, 0.06); margin-top: 20px;} div.emblem:after{content: ''; width: 0px; height: 0px; display: none; position: absolute; margin: 0px; border-top: 50px solid #b3a923; border-right: 100px solid transparent; border-left: 100px solid transparent; bottom: -27%; left: 0;}
+header div.col-md-4 h3{color: #fff; margin:0px; padding: 0px 19px; float: left; background: #ffad40; line-height: 71px; text-align: center; } header div.col-md-4 h3:hover{ background: #31333d;}
+header.inner{border-bottom: 1px solid #9199b3;} header div.col-md-2{padding: 0px; margin: 0px; text-align: right;} header div.col-md-3{padding: 0px; margin: 0px; text-align: right;} header div.col-md-4{padding: 0px; margin: 0px;}  div.col-md-8{padding: 0px; margin: 0px; } div.col-md-9{padding: 0px; margin: 0px; } header div.socials{padding: 17px 0px; margin-left: 20px;} header img.logo{ width: auto; height: 71px; float: left; display: block; background: #fafafa;}
+div.title{display: none; width: 100%; float: left; margin:0px; padding: 4px 0px;} div.title h3{margin:0px; text-align: center;}
+nav{width: 85%; border-bottom: 1px solid rgba(255, 255, 255, 0.28); position:relative; float:right; display:block;font-family: 'Montserrat', sans-serif;} 
+section{width: 100%; float: left; display: block; position: relative; height: auto; margin: 0px;}
+section div.container{padding:0%;}
+footer{position: relative; margin:0px; bottom: 0px; display: block; float: left; width: 100%; border-top: 1px solid #d8d8d8; color: #eee; font-size: 13px; font-weight: 100; padding-top: 0px; font-family: 'Montserrat';}
+footer p{text-align: center; color: #333; line-height: 45px}
+ul{margin-left: -40px;} li{ width: auto; display: block; position: relative;}
+ul.intro-menu{display: block; width: 100%;position: relative; float: left; top: 40%; -moz-transition: all 500ms linear; -webkit-transition: all 500ms linear;  -o-transition: all 500ms linear; transition: all 500ms linear;} .intro-menu li{display: block; width: 100%; float: left; margin: 0%; line-height: 35px; text-align: left; margin-bottom: 10px;} ul.intro-menu i.fa{width: 35px; height: 35px; border-radius: 50%; background: rgba(255,255,255,0.15); color: #fff; text-align: center; line-height: 35px; margin-right: 10px; float: left;} ul.intro-menu li span.link{margin-left: 10px;}  ul.intro-menu li span.link:before{ display: block; width: 4px; height: 1px; background: #fff; content: ''; position: absolute; left: -12%; top: 50%;  -moz-transition: all 500ms linear; -webkit-transition: all 500ms linear;  -o-transition: all 500ms linear; transition: all 500ms linear;}  ul.intro-menu i.active{background: #09f;} .intro-menu a{color: #fff; text-transform: capitalize;} section.banner div.container{margin:5% auto; height: 90%; float: none;} section.banner div.container div{height: 100%; display: block; z-index: 999;} .intro-menu li:hover span.link:before {width: 15px; left: -25%;} .bring-down{-webkit-animation: downPlace 1s linear 12s; animation: downPlace 1s linear 12s; }
+
+
+.intro-menu:after, :before{-moz-transition: all 500ms linear; -webkit-transition: all 500ms linear;  -o-transition: all 500ms linear; transition: all 500ms linear;}
+.intro-menu:after{display: block; width: 1px; height: 50px; position: absolute; content: ''; background: rgba(255, 255, 255, 0.5); bottom: -60%; left: 20%;} .intro-menu:before{display: block; width: 1px; height: 50px; position: absolute; content: ''; background:  rgba(255, 255, 255, 0.6); top: -60%; left: 20%;}
+
+ul.intro-list{width: 100%; display: block; float: left; top: 25%; position: relative; opacity: 0;} .intro-list li{width: 45%; display: block; float: left; height: 100px; margin: 5px;} .intro-list li a{display: block; width: 100%; height: 100%; background: linear-gradient(to right, rgba(0, 0, 0, 0.54), rgba(54, 54, 54, 0)); border-radius: 10px;} .intro-list div{padding: 0px;} .intro-list a span{width: 100px; height: 100px; display: block; background: #fff; position: relative;font-size: 30px; text-align: center; line-height: 100px; font-weight: bold;  -moz-transition: all 200ms linear; -webkit-transition: all 200ms linear;  -o-transition: all 200ms linear; transition: all 200ms linear;} .intro-list li p{line-height: 100px; color: #fff; font-size: 15px; display: block;} .intro-list a span:hover{background: none;} .intro-list li:hover span{background: none;} .intro-list li:hover i.fa{ -webkit-animation: breeze .3s linear 1s infinite; animation: breeze .3s linear 1s infinite;} .intro-list li:hover a{    -ms-transform: scale(1.05, 1.05); /* IE 9 */ -webkit-transform: scale(1.05, 1.05); /* Safari */ transform: scale(1.05, 1.05);}
+
+ul.intro-list.reveal{opacity: 1;}
+.base-art{width: 100%; height: 100%; display: block; /*background: url(../img/abstract.png);*/ background-repeat: no-repeat; background-position: center; z-index: 100; position: absolute; top: 0%; left: 0%;}
+
+.base-art:before{display: block; content: ''; border-top: 1px solid  rgba(255, 255, 255, 0.5); border-right: 1px solid  rgba(255, 255, 255, 0.4); width: 80%; height: 200px; position: absolute; top: 18%; right: 2.5%;}
+.base-art:after{display: block; content: ''; border-bottom: 1px solid  rgba(255, 255, 255, 0.5); border-right: 1px solid  rgba(255, 255, 255, 0.4); width: 80%; height: 200px; position: absolute;bottom: 7%; right: 2.5%;}
+
+nav{display: none;}
+nav ul{width: auto; display: block;float: left; position: relative; margin: 0px; margin-left: -40px;}
+nav li{ list-style:none; float:left; transition:background .5s; -webkit-transition:background .5s; -moz-transition: background .5s; -ms-transition: background .5s;} nav li:last-child{border: none;} nav a{padding: 0px 25px; line-height: 60px; display: block; color: #fff; font-family: 'Montserrat', sans-serif; text-transform:capitalize; font-size:15px; font-weight: 600;} nav li:hover{/*background:#f29e18;*/}
+nav li:first-child{margin-left:10px;}nav ul.dropdown{width: 200px; display: none ; position: absolute; float: none ; padding: 0px; margin: 0px; -webkit-transition: margin-top .5s; -o-transition: margin-top .5s; -moz-transition: margin-top .5s; -ms-transition: margin-top .5s;}
+nav ul.dropdown li{float: none; margin: 0px; border: none; display: block; position: relative; width: 100%; background: #fff;}
+nav ul.dropdown li:hover{ background:rgba(255, 236, 185, 0.2);} nav ul.dropdown li a:hover{background: #333; color: #fff;}
+nav ul.dropdown li a{line-height: 45px; color: #333; font-weight: 100;}  nav ul.dropdown li:last-child{border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;}
+nav li:hover > ul.dropdown{display: block; margin-top: 0px;}
+div.mobile-menu{display: none; color: #fff; float: left; padding: 0%; width: 100%; z-index: 999999;} div.mobile-menu i.fa-bars{ float: right; font-size: 32px; cursor: pointer; margin-top: 10px;} div.mobile-menu .logo{float: left;  width: 20.3%; margin-top: 5px; padding: 2px;  position: relative; overflow: hidden;} div.mobile-menu .logo img{width: 100%;}
+
+         div.mobile-menu ul{width: 100%; padding:20px 35px; overflow-x: hidden; position: relative; display: none; height: 0px; margin: 0px 0px 0px 0px;  background: #fff; margin-right: -35px;  margin-top: 0px; transition: height .5s; -moz-transition: height .5s; -webkit-transition: height .5s; -ms-transition: height .5s; z-index: 9999;} div.mobile-menu ul ul{margin-top: 0px; margin-right: 0px; margin-left: 0px; background: none; height: auto !important; padding: 0px;} div.mobile-menu ul li{ color: #666;  float: left; width: 100%; display: block; position: relative;} div.mobile-menu li li{margin-left: 0px; padding: 5px; background: #eae8e8; border-bottom: 1px solid #424141;} .bar-close{display: none;} .hide-bar{display: none;} .show-bar{display: block;} ul.mbl-menu a{ color: #000 !important;  float: left; text-transform: capitalize; padding: 5px 0px;}
+
+.reveal{ opacity: 1;}
+footer h4{color: #c1c6d1;} footer li a{color:#eee;} footer div.raised{padding: 30px 15px; margin-top: -150px; background: #333;} .raised div.col-md-3:first-child{margin-top: -30px; background: #fff; margin-left: -15px; height: 250px; margin-bottom: -30px;} .raised img{width: 200px; margin: 32px auto; display: block;} footer i.fa{font-size: 20px;}
+h1, h2, h3, h4, h5, h6{font-family: 'Montserrat', sans-serif; font-weight: bold;}
+div.title > h3{font-size: 20px; margin-bottom: 0px; color: #fff; font-weight: bolder;}
+
+div.container{width: 90%; margin: 0% 5%;float: left; display: block; position: relative;}
+div.footer{display: block; width: 100%; height: auto;  color: #333; float: left; position: relative; padding: 10px 0px; font-weight: 200; margin-top: 30px;} div.footer div.col-md-6{padding: 15px;} div.footer div.socials a{color: #333; font-size: 14px;}
+div.site-logo{display: block; position: relative; width: 100%; float: left; z-index:999; overflow:hidden;}
+ div.simple-ticker{height: 200px !important; margin:15px 10px;}
+
+
+section.banner{background: radial-gradient(circle at top center, rgb(70, 141, 238), #070d1b);  padding:0px; margin: 0px; margin-top: -75px; /*background: url(../img/background.png); background-attachment: fixed; background-size: cover;*/ height: 700px;}
+section.banner-inner{padding: 0px; margin: 0px; height: 320px; margin-top: -62px; z-index: 999; background: radial-gradient(circle at top center, rgb(71, 177, 45), #2f6f2c);}
+section.banner-inner span{z-index: 99999; position: absolute; left: 25%; font-size: 16px; top: 10px; font-family: 'Montserrat'; text-transform: capitalize;}
+section.banner-inner div.page-title{ position: absolute; background: #fff; right: 6.1%; padding: 15px 20px; text-transform: lowercase; bottom: -1px; border: 1px solid rgba(37, 39, 46, 0.3); border-bottom: none; text-align: right;}
+section.banner-inner div.page-title h3{padding: 0px; margin: 0px; text-transform: capitalize; }
+section.banner-inner div.img{overflow: hidden; width: 100%; height: 100%; margin: 0px; display: block;} section.banner-inner div.img img{width: 100%;}
+div#myCarousel.carousel.slide{margin-top: 0px;}
+
+footer.inner{margin-top: 60px; border-top: none;}
+
+ul.intro-list li:first-child{ 
+    animation-name: flyInRight;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-duration: .5s;
+}
+ul.intro-list li:nth-child(2){ 
+    animation-name: flyInLeft;
+    animation-delay: .2s;
+    animation-timing-function: ease-in-out;
+    animation-duration: .5s;
+}
+ul.intro-list li:nth-child(3){ 
+    animation-name: flyInRight;
+    animation-delay: .4s;
+    animation-timing-function: ease-in-out;
+    animation-duration: .5s;
+}
+ul.intro-list li:nth-child(4){ 
+    animation-name: flyInLeft;
+    animation-delay: .6s;
+    animation-timing-function: ease-in-out;
+    animation-duration: .5s;
+}
+ul.intro-list li:last-child{ 
+    animation-name: downUp;
+    animation-delay: .8s;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+}
+
+
+.base-art:before{ animation-name: dropdown;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-duration: 1.5s;}
+
+.base-art:after{ 
+    animation-name: downUp;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-duration: 1.5s; }
+
+.fallDown{ 
+    animation-name: dropdown;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-duration: 1.5s;
+}
+
+.flyInLeft{
+    animation-name: flyInLeft;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+.flyInRight{
+    animation-name: flyInRight;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;    
+}
+
+.downUp{
+    animation-name: downUp;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-duration: .5s;    
+}
+
+/* setting some animation presets for the site template */
+@keyframes dropdown{
+    0%{ opacity: 0; margin-top: -50px;}
+    100%{opacity: 1; margin-top: 20px;}
+}
+
+@-moz-keyframes dropdown{
+    0%{ opacity: 0; margin-top: -50px;}
+    100%{opacity: 1; margin-top: 20px;}
+}
+
+@-webkit-keyframes dropdown{
+    0%{ opacity: 0; margin-top: -50px;}
+    100%{opacity: 1; margin-top: 20px;}
+}
+
+@-ms-keyframes dropdown{
+    0%{ opacity: 0; margin-top: -50px;}
+    100%{opacity: 1; margin-top: 20px;}
+}
+
+@keyframes flyInLeft{
+    0%{opacity: 0; margin-left: 100px;}
+    100%{opacity: 1; margin-left: 0px;}
+}
+
+@-webkit-keyframes flyInLeft{
+    0%{opacity: 0; margin-left: 100px;}
+    100%{opacity: 1; margin-left: 0px;}
+}
+
+@-moz-keyframes flyInLeft{
+    0%{opacity: 0; margin-left: 100px;}
+    100%{opacity: 1; margin-left: 0px;}
+}
+
+@-ms-keyframes flyInLeft{
+    0%{opacity: 0; margin-left: 100px;}
+    100%{opacity: 1; margin-left: 0px;}
+}
+
+
+@keyframes flyInRight{
+    0%{opacity: 0; margin-left: -100px;}
+    100%{opacity: 1; margin-left: 0px;}
+}
+
+@-webkit-keyframes flyInRight{
+    0%{opacity: 0; margin-left: -100px;}
+    100%{opacity: 1; margin-left: 0px;}
+}
+
+@-moz-keyframes flyInRight{
+    0%{opacity: 0; margin-left: -100px;}
+    100%{opacity: 1; margin-left: 0px;}
+}
+
+@-ms-keyframes flyInRight{
+    0%{opacity: 0; margin-left: -100px;}
+    100%{opacity: 1; margin-left: 0px;}
+}
+
+
+@keyframes downUp{
+    0%{opacity: 0; margin-top: 50px;}
+    100%{opacity: 1; margin-top: 0px;}
+}
+
+@-webkit-keyframes downUp{
+    0%{opacity: 0; margin-top: 50px;}
+    100%{opacity: 1; margin-top: 0px;}
+}
+
+@-moz-keyframes downUp{
+    0%{opacity: 0; margin-top: 50px;}
+    100%{opacity: 1; margin-top: 0px;}
+}
+
+@-ms-keyframes downUp{
+    0%{opacity: 0; margin-top: 50px;}
+    100%{opacity: 1; margin-top: 0px;}
+}
+
+
+@media (max-width: 960px){
+    header div.emblem{ background: #fff;} section.banner{height: auto;} section.banner div.container{margin-top: 120px;} section.banner div.container div{height: auto;} ul.intro-menu.downUp{margin-top: 140px;} ul.intro-list li{width: 100%;} .intro-list li p{font-size: 10px; padding: 0px 10px;}
+}
