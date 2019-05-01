@@ -29,8 +29,8 @@
 
 body {
   margin: 0px;
-  background: #fff;
-  color: #333;
+  background: #000;
+  color: #fff;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
   text-rendering: optimizeLegibility;
@@ -205,39 +205,6 @@ section div.container h3.center {
 section div.container h3.center:after {
   margin: 10px auto;
   float: none;
-}
-section div.container h4.center {
-  text-align: center;
-  float: none;
-  margin: 40px auto;
-  font-size: 40px;
-}
-section div.container h4.center:after {
-  margin: 10px auto;
-  float: none;
-}
-section div.set-center {
-  text-align: center;
-  width: 80%;
-  margin: 0% 10%;
-  margin-bottom: 15px;
-}
-section div.set-center span.call-to-action {
-  margin: 10px 33%;
-  width: 33%;
-}
-section div.set-center span.call-to-action a {
-  text-align: center;
-}
-section div.set-border-right::after {
-  background: #0099ff;
-  width: 1px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0%;
-  display: block;
-  content: "";
 }
 footer {
   position: relative;
@@ -1733,9 +1700,6 @@ div.slide-item:hover .slide-details {
   float: left;
   position: relative;
 }
-.bg-grey {
-  background: #eee;
-}
 .art-details {
   display: none;
   width: 100%;
@@ -2122,6 +2086,10 @@ div.banner-socials span {
   color: #fff;
   display: block;
 }
+div.banner-socials:hover {
+  /*background: #434649; border-bottom: 10px solid #09f;*/
+}
+
 div.banner-socials li:hover {
   background: #09f;
   border: none;
@@ -2199,9 +2167,6 @@ ul.products-list li a div.col-md-12 {
   font-size: 13px;
 }
 ul.products-list li:hover a {
-  color: #333;
-}
-ul.products-list li:hover a span i {
   color: #fff;
 }
 ul.products-list a img {
@@ -2242,39 +2207,6 @@ div.prod-cont {
 }
 div.prod-cont h4 {
   margin: 40px;
-}
-section.dynamic .container h4 {
-  font-size: 28px;
-}
-section.dynamic .container i {
-  font-size: 45px;
-}
-div.caption-box {
-  width: 100%;
-  border: 1px solid #b6b6b6;
-  background: #f1f1f1;
-  padding: 10px;
-  text-align: center;
-  margin-bottom: 15px;
-}
-div.caption-box h4 {
-  text-align: center;
-}
-div.caption-box p {
-  padding: 20px;
-}
-div.caption-box span.call-to-action {
-  margin: 10px 33%;
-}
-div.caption-box i {
-  font-size: 75px;
-}
-section h4.reg {
-  font-size: 35px;
-  font-weight: 100;
-  word-spacing: 5px;
-  letter-spacing: -3px;
-  margin-bottom: 25px;
 }
 a.cus-btn {
   background: #fff;
