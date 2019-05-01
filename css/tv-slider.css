@@ -9,6 +9,7 @@ div.item {
   padding: 10px 40px;
   text-shadow: none;
   width: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.77) 75.21%);
 }
 .carousel-caption div.banner-content {
   display: block;
@@ -37,10 +38,8 @@ div.item {
 .carousel-caption h4 {
   font-size: 15px;
   text-transform: capitalize;
-  width: auto;
+  width: 100%;
   float: left;
-  padding: 10px 8px;
-  background: #000;
 }
 .carousel-caption a {
   color: #eee;
@@ -115,7 +114,7 @@ div.carousel-caption span.call-to-action a {
   margin: 0px;
   background: none;
   width: 100%;
-  margin-top: 11%;
+  margin-top: 18%;
 }
 #myCarousel .carousel-controls div.col-md-6 {
   padding: 0px;
@@ -145,11 +144,9 @@ div.carousel-caption span.call-to-action a {
   font-size: 20px;
   margin: 0%;
   color: #fff;
-  padding: 15px 20px;
+  padding: 20px;
   text-shadow: none;
   font-weight: 100 !important;
-  background: #000;
-  border-radius: 200px;
 }
 .list-group-item.active,
 .list-group-item.active:focus,
@@ -183,13 +180,13 @@ div.carousel-caption span.call-to-action a {
   }
 }
 .carousel-inner {
-  height: 500px;
+  height: 650px;
 }
 .carousel-inner a {
   color: #eee;
 }
 div.item {
-  height: 500px;
+  height: 650px;
   overflow: hidden;
 }
 .carousel-inner > .item > a > img,

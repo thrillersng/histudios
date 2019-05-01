@@ -98,9 +98,6 @@ div {
 }
 
 @media (max-width: 997px) {
-  header {
-    display: none;
-  }
   nav a {
     padding: 0px 10px;
   }
@@ -161,7 +158,6 @@ div {
     float: right;
     line-height: 70px;
     font-size: 20px;
-    color: #fff;
   }
 
   .shw-m-menu {
@@ -222,16 +218,6 @@ div {
   }
 }
 @media (max-width: 670px) {
-  .carousel-caption div.banner-content {
-    width: 100%;
-  }
-  section div.set-border-right::after {
-    display: none;
-  }
-  section div.set-center span.call-to-action {
-    width: 80%;
-    margin: 10px 10%;
-  }
   .raised div.col-md-3:first-child {
     width: 107%;
   }
