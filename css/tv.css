@@ -2611,3 +2611,54 @@ div#jivo-chat.jivo-fixed-bottom.jivo-offline.jivo-orientation-bottom.container-w
 div#jivo-chat.jivo-fixed-bottom.jivo-offline.jivo-orientation-bottom.container-with-leaf.jivo-animated.offline {
   background-color: rgb(77, 123, 185) !important;
 }
+
+ul.programmes {
+  width: 100%;
+  display: block;
+  margin-left: -40px;
+}
+ul.programmes li a {
+  width: 255px;
+  height: 255px;
+}
+
+h4.blu-line {
+  float: left;
+  width: 100%;
+}
+h4.blu-line::after {
+  display: block;
+  content: "";
+  background: linear-gradient(120deg, #989898, #040404);
+  width: 100%;
+  height: 1px;
+  float: left;
+  margin-top: 9px;
+  margin-right: 5%;
+  position: relative;
+}
+ul.programme-list {
+  float: left;
+  display: block;
+  width: 100%;
+}
+ul.programme-list li {
+  background: linear-gradient(123deg, #0962d9, #0092f4);
+  padding: 10px;
+  font-weight: normal;
+  color: #fff;
+  border-radius: 2px;
+  margin: 1px 0px;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+}
+ul.programme-list li:hover {
+  background: linear-gradient(76deg, #06408d, #0092f4);
+  padding-left: 15px;
+}
+ul.programme-list li a {
+  color: #fff;
+  font-weight: normal;
+}

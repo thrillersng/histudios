@@ -11,6 +11,14 @@ div.item {
   width: 100%;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.77) 75.21%);
 }
+#myCarousel div.programme-caption {
+  background: linear-gradient(
+    183deg,
+    transparent 27.73%,
+    rgba(0, 0, 0, 0.77) 76.47%,
+    rgba(1, 0, 0, 1) 98.74%
+  );
+}
 .carousel-caption div.banner-content {
   display: block;
   position: absolute;
@@ -189,10 +197,22 @@ div.item {
   height: 650px;
   overflow: hidden;
 }
+
 .carousel-inner > .item > a > img,
 .carousel-inner > .item > img {
   width: 100%;
   opacity: 1;
+}
+
+div.programme-banner {
+  height: 500px;
+}
+.carousel-inner a {
+  color: #eee;
+}
+div.programme-item {
+  height: 500px;
+  overflow: hidden;
 }
 
 .simple-ticker {
