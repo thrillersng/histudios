@@ -1,0 +1,297 @@
+div.item {
+  width: 100%;
+}
+#myCarousel .carousel-caption {
+  left: 15%;
+  height: 50%;
+  bottom: 10%;
+  padding: 10px 0px;
+  text-shadow: none;
+  width: 70%;
+  text-align: center;
+}
+.carousel-caption div.banner-content {
+  display: block;
+  position: relative;
+  margin-top: 0%;
+  float: left;
+  padding: 10px;
+  width: 100%;
+}
+.carousel-caption div.container {
+  height: 100%;
+  margin: 0%;
+  width: 100%;
+}
+.carousel-caption p {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  margin-right: 0%;
+  text-transform: capitalize;
+  float: left;
+}
+.carousel-caption h4 {
+  font-size: 45px;
+  text-transform: capitalize;
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+.carousel-caption a {
+  color: #eee;
+}
+.carousel-caption span.call-to-action {
+  position: relative;
+  float: none;
+  display: block;
+  height: auto;
+  margin: 0px auto;
+  clear: both;
+  min-width: 150px;
+  width: 200px;
+  text-align: center;
+}
+.carousel-caption span.programme {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 3px;
+  margin-left: 15px;
+  line-height: 45px;
+  border-left: 1px solid #fff;
+  padding-left: 15px;
+}
+.carousel-caption span.call-to-action:hover {
+  background: #0962d9;
+}
+.main-title {
+  position: absolute;
+  width: 25%;
+  top: 28%;
+  left: 13%;
+  display: block;
+  color: #fff;
+  z-index: 9999;
+}
+.main-title span {
+  font-size: 16px;
+  font-weight: 100;
+  margin-top: 15px;
+  display: block;
+  border-top: 1px solid;
+  padding-top: 10px;
+}
+div.carousel-caption span.call-to-action a {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  font-size: 13px;
+  padding: 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.carousel-caption span.call-to-action a i {
+  display: block;
+  position: relative;
+  float: right;
+  font-size: 20px;
+  margin-left: 8px;
+}
+#myCarousel .list-group {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#myCarousel .list-group-item {
+  border-radius: 0px;
+  cursor: pointer;
+}
+#myCarousel .list-group .active {
+  background-color: #000;
+}
+#myCarousel .carousel-controls {
+  display: block;
+  position: absolute;
+  float: left;
+  margin: 0px;
+  background: none;
+  width: 100%;
+  margin-top: 275px;
+  z-index: 1000;
+}
+#myCarousel .carousel-controls div.col-md-6 {
+  padding: 0px;
+}
+.carousel-controls div.col-md-6:last-child {
+  background: #0962d9;
+  display: block;
+  float: left;
+}
+.carousel-controls a {
+  float: left;
+  position: relative;
+  width: 50px;
+  display: block;
+  opacity: 0.8;
+  color: #fff;
+  line-height: 50px;
+  margin-left: 2.5%;
+  text-align: left;
+}
+.carousel-controls a:nth-child(2) {
+  text-align: right;
+  float: right;
+  margin-right: 2.5%;
+}
+.carousel-controls i.fa {
+  font-size: 20px;
+  margin: 0%;
+  color: #fff;
+  padding: 15px 20px;
+  text-shadow: none;
+  font-weight: 100 !important;
+  background: #000;
+  border-radius: 200px;
+}
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover {
+  border: none;
+}
+.carousel-control.left {
+  background-image: none;
+  background: none;
+}
+.carousel-control.right {
+  background-image: none;
+  background: none;
+}
+@media (min-width: 992px) {
+  #myCarousel .carousel-controls {
+    display: block;
+  }
+  .carousel-caption div.banner-content {
+    overflow: hidden;
+  }
+}
+@media (max-width: 991px) {
+  .carousel-caption p,
+  #myCarousel .list-group {
+    display: none;
+  }
+  .carousel-caption div.banner-content {
+    height: auto;
+    overflow: hidden;
+  }
+}
+.carousel-inner {
+  height: 600px;
+}
+.carousel-inner a {
+  color: #eee;
+}
+div.item {
+  height: 600px;
+  overflow: hidden;
+}
+.carousel-inner > .item > a > img,
+.carousel-inner > .item > img {
+  width: 100%;
+  opacity: 0.5;
+}
+
+.simple-ticker {
+  position: relative;
+  width: 80%;
+  padding: 5px;
+  overflow: hidden;
+  float: left;
+  display: block;
+  margin-left: 10px;
+}
+.simple-ticker ul {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.simple-ticker li {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.simple-ticker li a {
+  color: #fff;
+  font-weight: bold;
+}
+@media (max-width: 640px) {
+  .carousel-inner {
+    height: auto;
+  }
+  .carousel-control {
+    display: none;
+  }
+  div.site-logo {
+    width: 35%;
+  }
+  nav {
+    margin-top: 20px;
+  }
+  nav ul {
+    display: none;
+  }
+  div.news-update {
+    padding-left: 0%;
+    padding-top: 10%;
+    margin-left: -15px;
+  }
+  div.news-update span {
+    padding: 5px 12px;
+  }
+  .simple-ticker {
+    width: 100%;
+    margin-left: 0px;
+  }
+  span.breaking {
+    font-size: 50px;
+    font-weight: 100;
+    padding: 0px;
+  }
+  div.postings div {
+    float: left;
+  }
+  div.head-banner {
+    height: 60px;
+    width: 100%;
+  }
+  div.ad-banner-1 {
+    height: 60px;
+    width: 100%;
+  }
+  div.mk-green {
+    min-height: 100px;
+  }
+  div.ad-banner-2 {
+    width: 98%;
+    position: relative;
+    margin: 10px 0px;
+    display: block;
+    float: left;
+  }
+  div.cls-vid-thumb {
+    display: none;
+  }
+  div.cls-vid-thumb:first-child {
+    display: block;
+  }
+  .carousel-caption div.banner-content {
+    height: 80px;
+    overflow: hidden;
+  }
+}

@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link
     rel="stylesheet"
-    href="css/font-awesome/css/fontawesome-all.css"
+    href="css/fontawesome.min.css"
     type="text/css"
   />
     <link type="text/css" href="css/news-slider.css" rel="stylesheet" />
@@ -29,7 +29,85 @@
 
   <body>
     <header>
-      <nav>
+        <nav>
+            <ul>
+              <li>
+                  <a href="index.html"><img src="img/logo.png" /></a>
+              </li>
+              <li>
+                <a href="livetv.html">Live TV <i class="fa fa-angle-down"></i></a>
+                <div class="dropdown downUp">
+                  <div class="container">
+                      <div class="col-md-6">
+                        <h4>Hi Impact Studios</h4>
+                        <p>Join our teaming online audience for live coverage of premium entertainment, informative and educative content. See programmes online as they unfold, enjoy access to the global community of our online subscribers by leaving your comments and views. </p>
+                        <span class="call-to-action"><a href="livetv.html"><i class="fas fa-tv"></i> Watch Now</a></span> 
+                      </div>
+                      <div class="col-md-6">
+                        <img src="img/remote.png" alt="" style="height:200px;">
+                      </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="tv.html">Television</a>
+              </li>
+              <li>
+                <a href="programme.html">programmes</a>
+                <div class="dropdown downUp">
+                  <div class="container">
+                    <div class="col-md-3">
+                      <h4>Entertainment</h4>
+                      <ul>
+                        <li><a href="#">America’s got talent</a></li>
+                        <li><a href="#">Hole in the wall</a></li>
+                        <li><a href="#">Match game</a></li>
+                        <li><a href="#">X-Factor</a></li>
+                        <li><a href="#">Fan’s corner</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <h4>Drama Series</h4>
+                      <ul>
+                        <li><a href="#">So much love</a></li>
+                        <li><a href="#">Paloma and Diego</a></li>
+                        <li><a href="#">Pasion Morena</a></li>
+                        <li><a href="#">The gardener’s daughter</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <h4>Educational</h4>
+                      <ul>
+                        <li><a href="#">Syllabus for excellence</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <h4>Inspirational</h4>
+                      <ul>
+                        <li><a href="#">Legends</a></li>
+                        <li><a href="#">Yours truly</a></li>
+                        <li><a href="#">Against all odds</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#">Advertise</a>
+              </li>
+              <li>
+                <a href="#">Contact us</a>
+              </li>
+              <li class="last">
+                <a href="#"><i class="fa fa-user-lock"></i> Login </a>
+                <form action="">
+                  <input type="search" class="form-control" id="" name="">
+                  <button class="btn btn-primary"><i class="fa fa-search"></i></button>
+                </form>
+              </li>
+            </ul>
+          </nav>
+      <!--nav>
         <ul>
           <li>
               <img src="img/logo.png" />
@@ -114,7 +192,7 @@
             </form>
           </li>
         </ul>
-      </nav>
+      </nav-->
     </header>
     <section class="banner">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -129,7 +207,7 @@
                             <a href="#">Nigeria's first full HD Television station can now also be viewed on Eutelsat platform</a>
                           </h4>
                           <p class="flyInLeft"> </p>
-                          <span class="call-to-action"><a href="#"><i class="fas fa-tv"></i> Watch Now</a></span> 
+                          <span class="call-to-action"><a href="tv.html"><i class="fas fa-tv"></i> Watch Now</a></span> 
                           <span class="programme"></span>
                         </div>
                 </div>
@@ -162,7 +240,7 @@
                           </h4>
                           <p class="flyInLeft">
                           </p>
-                          <span class="call-to-action"><a href="#"><i class="fas fa-tv"></i> Watch Now</a></span>
+                          <span class="call-to-action"><a href="livetv.html"><i class="fas fa-tv"></i> Watch Now</a></span>
                         </div>
                 </div>
             </div>
@@ -173,10 +251,10 @@
         <!-- Controls -->
         <div class="carousel-controls">
             <a class="carousel-control" href="#myCarousel" data-slide="prev">
-              <i class="fa fa-angle-left"></i>
+              <i class="fas fa-angle-left"></i>
             </a>
             <a class="carousel-control" href="#myCarousel" data-slide="next">
-              <i class="fa fa-angle-right"></i>
+              <i class="fas fa-angle-right"></i>
             </a>
           </div>
         </div>
