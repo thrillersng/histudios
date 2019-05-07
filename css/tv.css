@@ -122,6 +122,10 @@ header div.col-md-4 {
   padding: 0px;
   margin: 0px;
 }
+div.col-md-6 {
+  padding: 0px;
+  margin: 0px;
+}
 div.col-md-8 {
   padding: 0px;
   margin: 0px;
@@ -146,6 +150,16 @@ header:hover nav a {
 }
 header.inner nav a {
   color: #fff;
+}
+
+hr {
+  position: relative;
+  float: left;
+  margin: 45px 0px;
+  width: 100%;
+  border: none;
+  height: 1px;
+  background: linear-gradient(268deg, #000, rgb(246, 246, 246) 52.1%, #000);
 }
 div.title {
   display: block;
@@ -172,6 +186,18 @@ section {
   position: relative;
   height: auto;
   margin: 0px;
+}
+table {
+  width: 100%;
+}
+th {
+  height: 45px;
+}
+tr {
+  border-bottom: 1px solid #3a373b;
+}
+td {
+  height: 35px;
 }
 section div.container {
   padding: 0%;
@@ -1004,29 +1030,6 @@ ul.playlist li.active {
 .btnVolOff {
   display: none;
 }
-section.ad-space {
-  width: 100%;
-  height: 180px;
-  background: radial-gradient(
-      ellipse farthest-corner at right bottom,
-      #c69312,
-      #d49b29 15.97%,
-      #ab822b 39.92%,
-      rgba(207, 171, 36, 0) 80%,
-      #8a6e2f
-    ),
-    radial-gradient(
-      ellipse farthest-corner at left top,
-      #ffc527,
-      #f4bd33 8%,
-      #d1b464 25%,
-      #5d4a1f 62.5%,
-      #5d4a1f
-    );
-  display: block;
-  position: relative;
-  float: left;
-}
 
 ul.mp-menu {
   width: 100%;
@@ -1493,63 +1496,6 @@ section.services {
   margin-bottom: 50px;
 }
 
-section.double-col {
-  padding: 0px;
-  margin: 0px;
-  height: auto;
-  color: #fff;
-  font-weight: 100;
-}
-section.double-col:before {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: #df9708;
-}
-section.double-col:after {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  background: #1b1c1e;
-  z-index: 0;
-}
-section.double-col div.container {
-  z-index: 1;
-}
-section.double-col h3 {
-  font-size: 30px;
-}
-section.double-col a {
-  display: block;
-  width: 70%;
-  text-align: center;
-  padding: 10px 20px;
-  color: #fff;
-}
-section.double-col span a {
-  color: #fff;
-  border: none;
-}
-section.double-col div.col-md-6 {
-  margin: 50px 0px;
-}
-section.double-col div.col-md-6:first-child {
-  color: #fff;
-  padding-right: 6%;
-}
-section.double-col div.col-md-6:last-child {
-  color: #fff;
-  padding-left: 6%;
-}
-
 section.feat {
   background: url(../img/background.jpg);
   background-attachment: fixed;
@@ -1580,8 +1526,7 @@ section.feat p {
   text-transform: capitalize;
   font-weight: 100;
 }
-section.feat h3 {
-}
+
 section.feat a.btn {
   float: left;
   color: #fff;
@@ -1601,8 +1546,7 @@ section.feat a.btn:after {
   margin: 5px auto;
   float: none;
 }
-section.feat div.container div.loader:first-child {
-}
+
 section.feat div.container div.loader:last-child {
   margin: 0px;
   padding: 0%;
@@ -1736,8 +1680,6 @@ div.slide-item:hover .art-details {
 section.white {
   background: #000;
   padding: 80px 0px;
-}
-section.white div.col:nth-child(2) {
 }
 section.white div.wrapper {
   background-size: 100% 100%;
@@ -1907,7 +1849,16 @@ section.profile div.profile-img img {
 .border-top {
   border-top: 1px solid #d1d1d1;
 }
-
+section div.center-place {
+  float: none;
+  margin: 0px auto;
+  position: relative;
+  width: 75%;
+}
+div.bold-content p {
+  line-height: 24px;
+  font-weight: 500;
+}
 .sml-btn {
   float: left;
   width: auto;
@@ -2661,4 +2612,8 @@ ul.programme-list li:hover {
 ul.programme-list li a {
   color: #fff;
   font-weight: normal;
+}
+a.names {
+  font-weight: 600;
+  color: #fff;
 }

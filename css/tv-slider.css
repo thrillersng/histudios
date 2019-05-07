@@ -14,10 +14,11 @@ div.item {
 #myCarousel div.programme-caption {
   background: linear-gradient(
     183deg,
-    transparent 27.73%,
-    rgba(0, 0, 0, 0.77) 76.47%,
-    rgba(1, 0, 0, 1) 98.74%
+    transparent 42.86%,
+    rgba(0, 0, 0, 0.77) 66.39%,
+    rgba(1, 0, 0, 1) 81.51%
   );
+  height: 100%;
 }
 .carousel-caption div.banner-content {
   display: block;
@@ -48,6 +49,9 @@ div.item {
   text-transform: capitalize;
   width: 100%;
   float: left;
+}
+.carousel-caption h4.programme-title {
+  font-size: 38px;
 }
 .carousel-caption a {
   color: #eee;
