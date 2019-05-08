@@ -99,6 +99,7 @@ div.carousel-caption span.call-to-action a {
   padding: 0px;
   text-transform: uppercase;
   font-weight: bold;
+  line-height: 23px;
 }
 .carousel-caption span.call-to-action a i {
   display: block;

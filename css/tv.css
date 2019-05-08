@@ -51,9 +51,9 @@ a:hover {
   font-family: "Montserrat";
 }
 .btn-primary:hover {
-  background: #0099ff;
-  color: #434649;
-  border-color: #09f;
+  background: #0081d7;
+  color: #eaf5ff;
+  border-color: #0089e4;
   font-family: "Montserrat";
 }
 div.row {
@@ -189,15 +189,67 @@ section {
 }
 table {
   width: 100%;
+  float: left;
 }
 th {
   height: 45px;
+  padding: 5px 10px;
 }
 tr {
   border-bottom: 1px solid #3a373b;
 }
 td {
   height: 35px;
+  padding: 5px 10px;
+}
+col:nth-child(2) {
+  background: #0e69e8;
+}
+col:nth-child(3) {
+  background: #0c5ac6;
+}
+col:nth-child(4) {
+  background: #0a4daa;
+}
+col:nth-child(5) {
+  background: #0b489f;
+}
+col:nth-child(6) {
+  background: #0081d7;
+}
+col:nth-child(7) {
+  background: #0e69e8;
+}
+col:nth-child(8) {
+  background: #0c5ac6;
+}
+col:nth-child(9) {
+  background: #0a4daa;
+}
+col:nth-child(10) {
+  background: #0b489f;
+}
+col:nth-child(11) {
+  background: #0081d7;
+}
+col:nth-child(12) {
+  background: none;
+}
+.form-group {
+  width: 100%;
+}
+input.form-control {
+  height: 50px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 0px;
+  border-bottom: 1px solid #333;
+  background: none;
+  color: #fff;
 }
 section div.container {
   padding: 0%;
@@ -234,7 +286,7 @@ section div.container h3.center:after {
 }
 footer {
   position: relative;
-  margin: 0px;
+  margin: 75px 0px;
   bottom: 0px;
   display: block;
   float: left;
@@ -298,6 +350,7 @@ li.last form input {
   border-radius: 0px;
   float: left;
   width: 200px;
+  height: 33px;
 }
 li.last button {
   float: left;
@@ -670,6 +723,9 @@ div.title > h3 {
   color: #fff;
   font-weight: bolder;
 }
+form {
+  font-weight: normal;
+}
 header div.container {
   margin: 0% 5%;
 }
@@ -899,7 +955,7 @@ li:hover {
   width: 100%;
   position: fixed;
   z-index: 99999;
-  bottom: -15%;
+  bottom: 0%;
   border-top: 1px solid rgba(255, 250, 250, 0.21);
   -moz-transition: all 500ms linear;
   -webkit-transition: all 500ms linear;
@@ -1910,6 +1966,22 @@ ul.rel-links li {
 #main-gallery {
   margin-top: 0;
 }
+div.img-holder {
+  width: 80%;
+  overflow-x: hidden;
+  padding: 0px 15px;
+}
+div.img-holder img.special {
+  width: auto;
+  height: 300px;
+  max-width: none;
+}
+h5.caption {
+  font-weight: 500;
+  font-size: 32px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
 #modal {
   position: fixed;
   top: 0%;
@@ -2194,12 +2266,55 @@ div.prod-cont a.left {
 .padded {
   padding: 35px 0px;
 }
+.pad-10 {
+  padding: 5px 10px;
+}
+.pad-20 {
+  padding: 10px 20px;
+}
+.pad-30 {
+  padding: 15px 30px;
+}
+.pad-40 {
+  padding: 20px 40px;
+}
 
 .no-overflow {
   overflow-x: hidden;
 }
 .no-margin {
   margin: 0px !important;
+}
+.marg-30 {
+  margin: 30px 0px;
+}
+.marg-40 {
+  margin: 40px 0px;
+}
+.marg-50 {
+  margin: 50px 0px;
+}
+.marg-60 {
+  margin: 60px 0px;
+}
+
+.marg-Top-30 {
+  margin-top: 30px;
+}
+.marg-Top-40 {
+  margin-top: 40px;
+}
+.marg-Top-50 {
+  margin-top: 50px;
+}
+.marg-Top-60 {
+  margin-top: 60px;
+}
+.marg-Top-70 {
+  margin-top: 70px;
+}
+.marg-Top-80 {
+  margin-top: 80px;
 }
 
 div.list-top-bar {
@@ -2351,7 +2466,44 @@ div.col-md-3.col {
   padding: 0px;
   overflow: hidden;
 }
-
+.preview-box {
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+}
+.preview-box a {
+  width: 100%;
+  height: 100%;
+}
+.preview-box img {
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+.preview-box span {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 350px;
+  font-size: 30px;
+  color: #fff;
+  background: linear-gradient(rgba(28, 28, 28, 0.35), rgba(0, 0, 0, 0.23));
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+}
+.preview-box a:hover span {
+  background: linear-gradient(rgba(28, 28, 28, 0.65), rgba(0, 0, 0, 0.65));
+}
+.more-info span {
+  width: 100%;
+  margin: 10px 0px;
+}
+.more-info .btn-primary {
+  text-transform: capitalize;
+  font-weight: bold;
+}
 .fallDown {
   animation-name: dropdown;
   animation-delay: 0s;
