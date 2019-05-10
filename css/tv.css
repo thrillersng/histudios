@@ -122,6 +122,10 @@ header div.col-md-4 {
   padding: 0px;
   margin: 0px;
 }
+header .btn-primary {
+  border: none;
+  background: none;
+}
 div.col-md-6 {
   padding: 0px;
   margin: 0px;
@@ -198,9 +202,32 @@ th {
 tr {
   border-bottom: 1px solid #3a373b;
 }
+tr.breaker {
+  background: #030303;
+}
 td {
   height: 35px;
   padding: 5px 10px;
+}
+table span {
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 5px 10px;
+  display: block;
+  position: relative;
+  float: right;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+table span.red {
+  background: #e93015;
+}
+table span.yellow {
+  background: yellow;
+  float: right;
+  clear: both;
+  color: #333;
+  margin: -35px 0px;
 }
 col:nth-child(2) {
   background: #0e69e8;
@@ -286,7 +313,6 @@ section div.container h3.center:after {
 }
 footer {
   position: relative;
-  margin: 75px 0px;
   bottom: 0px;
   display: block;
   float: left;
@@ -359,7 +385,7 @@ li.last a {
   float: right;
 }
 nav a {
-  padding: 0px 20px;
+  padding: 0px 15px;
   line-height: 65px;
   display: block;
   color: #fff;
@@ -697,7 +723,7 @@ footer i.fa {
   float: left;
 }
 footer img {
-  height: 100%;
+  height: 100px;
   padding: 50px;
   padding-left: 0px;
   padding-top: 0px;
@@ -952,10 +978,14 @@ li:hover {
 .music_player {
   display: block;
   background: #000;
-  width: 100%;
+  width: 315px;
+  height: 80px;
+  overflow: hidden;
   position: fixed;
+  border-radius: 50px;
+  right: 0;
   z-index: 99999;
-  bottom: 0%;
+  bottom: 15%;
   border-top: 1px solid rgba(255, 250, 250, 0.21);
   -moz-transition: all 500ms linear;
   -webkit-transition: all 500ms linear;
@@ -2283,6 +2313,9 @@ div.prod-cont a.left {
   overflow-x: hidden;
 }
 .no-margin {
+  margin: 0px !important;
+}
+.no-padding {
   margin: 0px !important;
 }
 .marg-30 {

@@ -19,12 +19,17 @@
     <link rel="canonical" href="https://www.hi-impactstudios.com" />
     <link type="shortcut" rel="icon" href="img/favicon.png" />
     <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!--link
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
       rel="stylesheet"
       href="css/font-awesome/css/fontawesome-all.css"
       type="text/css"
-    /-->
+    />
     <link type="text/css" href="css/news-slider.css" rel="stylesheet" />
     <link type="text/css" href="css/main.css" rel="stylesheet" />
     <link type="text/css" href="css/responsive.css" rel="stylesheet" />
@@ -35,7 +40,9 @@
       <nav>
         <ul>
           <li>
-            <img src="img/logo.png" />
+            <a href="index.html" class="no-padding"
+              ><img src="img/logo.png"
+            /></a>
           </li>
           <li>
             <a href="#">About Us <i class="fa fa-angle-down"></i></a>
@@ -43,10 +50,10 @@
               <div class="container">
                 <div class="col-md-6">
                   <ul>
-                    <li><a href="#">Who we are</a></li>
-                    <li><a href="#">our vision</a></li>
-                    <li><a href="#">our mission</a></li>
-                    <li><a href="#">our core values</a></li>
+                    <li><a href="about.html">Who we are</a></li>
+                    <li><a href="about.html">our vision</a></li>
+                    <li><a href="about.html">our mission</a></li>
+                    <li><a href="about.html">our core values</a></li>
                   </ul>
                 </div>
                 <div class="col-md-6">
@@ -60,10 +67,7 @@
             </div>
           </li>
           <li>
-            <a href="#">Hi Impact TV</a>
-          </li>
-          <li>
-            <a href="#">Hi Impact Radio</a>
+            <a href="tv.html">Hi Impact TV</a>
             <div class="dropdown downUp">
               <div class="container">
                 <div class="col-md-3">
@@ -105,16 +109,19 @@
             </div>
           </li>
           <li>
-            <a href="#">Advertise</a>
+            <a href="#">Hi Impact Radio</a>
           </li>
           <li>
-            <a href="#">Careers</a>
+            <a href="about.html">Advertise</a>
           </li>
           <li>
-            <a href="#">Contact us</a>
+            <a href="about.html">Careers</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact us</a>
           </li>
           <li class="last">
-            <a href="#"><i class="fa fa-user-lock"></i> Login </a>
+            <a href="sign-in.html"><i class="fa fa-user-lock"></i> Login </a>
             <form action="">
               <input type="search" class="form-control" id="" name="" />
               <button class="btn btn-primary">
@@ -139,36 +146,67 @@
       <div class="container">
         <div class="col-md-8 pad-20">
           <h4>Contact Hi-Impactstudios</h4>
-          <span class="col-md-4">
-            <i class="fa fa-map-marker"></i>
+          <span class="col-md-6">
+            <h5><i class="fa fa-map-marker"></i> Official Address</h5>
             <p>No 32, Coker Road, Ilupeju, Lagos.</p>
           </span>
-          <span class="col-md-4">
-            <i class="fa fa-envelope"></i>
-            <p>contact@hi-impactstudios.com</p>
+          <span class="col-md-6">
+            <h5><i class="fa fa-map-marker"></i> Studio Address</h5>
+            <p>
+              HI-IMPACT ROAD,KM 12, LAGOS-IBADAN EXPRESS WAY, OPPOSITE MFM
+              PRAYER CITY, IBAFO
+            </p>
           </span>
-          <span class="col-md-4">
-            <i class="fa fa-phone"></i>
+          <span class="col-md-6">
+            <h5><i class="fa fa-envelope"></i> General Aupport</h5>
+            <p>info@hi-impactstudios.com</p>
+          </span>
+          <span class="col-md-6">
+            <h5><i class="fa fa-phone"></i> Lets Talk</h5>
             <p>+2348150832990, +2347051192839</p></span
           >
           <hr />
           <h4>Send Us a Message</h4>
           <form action="">
             <div class="form-group col-md-12">
-              <label for="fullname">Your Name</label>
-              <input type="text" class="form-control" name="" id="" />
+              <label for="fullname">Full Name</label>
+              <input
+                type="text"
+                class="form-control"
+                name="fullname"
+                id="fullname"
+              />
             </div>
             <div class="form-group col-md-12">
-              <label for="fullname">Your Name</label>
-              <input type="text" class="form-control" name="" id="" />
+              <label for="email">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                id="email"
+              />
             </div>
             <div class="form-group col-md-12">
-              <label for="fullname">Your Comment</label>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                class="form-control"
+                name="subject"
+                id="subject"
+              />
+            </div>
+            <div class="form-group col-md-12">
+              <label for="comment"> Comment</label>
+              <textarea
+                name="comment"
+                id="comment"
+                cols="30"
+                rows="10"
+              ></textarea>
             </div>
             <div class="form-group col-md-12">
               <button class="btn btn-primary" type="submit">
-                Send <i class="fa fa-paper-plane"></i>
+                Send Message <i class="fa fa-paper-plane"></i>
               </button>
             </div>
           </form>
@@ -215,17 +253,17 @@
         <div class="col-md-3">
           <h4>About Us</h4>
           <ul>
-            <li><a href="#">Our Mission</a></li>
-            <li><a href="#">Our Vision</a></li>
-            <li><a href="#">Our Core Values</a></li>
+            <li><a href="about.html">Our Mission</a></li>
+            <li><a href="about.html">Our Vision</a></li>
+            <li><a href="about.html">Our Core Values</a></li>
           </ul>
         </div>
         <div class="col-md-3">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#">Live Tv</a></li>
+            <li><a href="livetv.html">Live Tv</a></li>
             <li><a href="#">Live Radio</a></li>
-            <li><a href="#">Programmes</a></li>
+            <li><a href="programme.html">Programmes</a></li>
             <li><a href="#">Movies</a></li>
             <li><a href="#">Shows</a></li>
           </ul>
@@ -235,7 +273,7 @@
           <i class="fa fa-map-marker"></i>
           <p>No 32, Coker Road, Ilupeju, Lagos.</p>
           <i class="fa fa-envelope"></i>
-          <p>email@email.com</p>
+          <p>info@hi-impactstudios.com</p>
           <i class="fa fa-phone"></i>
           <p>+2348150832990, +2347051192839</p>
         </div>
@@ -257,13 +295,27 @@
           </div>
           <div class="col-md-6 pull-right socials">
             <li>
-              <a href="#"> <i class="fab fa-facebook"></i></a>
+              <a href="https://www.facebook.com/hiimpacttv" target="blank">
+                <i class="fab fa-facebook"></i
+              ></a>
             </li>
             <li>
-              <a href="#"> <i class="fab fa-twitter"></i></a>
+              <a href="https://twitter.com/hiimpacttv" target="blank">
+                <i class="fab fa-twitter"></i
+              ></a>
             </li>
             <li>
-              <a href="#"> <i class="fab fa-instagram"></i></a>
+              <a href="https://www.instagram.com/hiimpacttv/" target="blank">
+                <i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCWAJmtJXMXr2VAQvV4NI5pw"
+                target="blank"
+              >
+                <i class="fab fa-youtube"></i
+              ></a>
             </li>
           </div>
         </div>
