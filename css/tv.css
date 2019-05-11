@@ -969,7 +969,7 @@ li:hover {
   width: 250px;
 }
 .btnPlay {
-  margin: 5px;
+  margin: 5px auto;
 }
 .btnStop {
   display: none;
@@ -977,24 +977,24 @@ li:hover {
 }
 .music_player {
   display: block;
-  background: #000;
-  width: 315px;
-  height: 80px;
+  /* background: #cd390d; */
+  width: 90px;
+  height: 115px;
   overflow: hidden;
   position: fixed;
-  border-radius: 50px;
-  right: 0;
+  right: 20px;
   z-index: 99999;
   bottom: 15%;
-  border-top: 1px solid rgba(255, 250, 250, 0.21);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
   -moz-transition: all 500ms linear;
   -webkit-transition: all 500ms linear;
   -o-transition: all 500ms linear;
   transition: all 500ms linear;
 }
-.music_player .container {
-  margin: 0.5% 5%;
-}
+
 .music_player span {
   margin: 0px 15px;
   padding: 5px;
@@ -1006,18 +1006,15 @@ li:hover {
   padding: 16px 17px;
   background: #141413;
   border-radius: 100px;
-  margin: 2px 3px;
 }
 .controls i.fa-volume-off {
   padding: 16px 20px;
 }
 .btnPlay i.fa {
   font-size: 22px !important;
-  padding: 20px 22px;
 }
 .btnStop i.fa {
   font-size: 22px;
-  padding: 20px 22px;
 }
 input[type="range"] {
   background-color: #fff;
@@ -2139,9 +2136,6 @@ div.banner-socials span {
   color: #fff;
   display: block;
 }
-div.banner-socials:hover {
-  /*background: #434649; border-bottom: 10px solid #09f;*/
-}
 
 div.banner-socials li:hover {
   background: #09f;
@@ -2536,6 +2530,36 @@ div.col-md-3.col {
 .more-info .btn-primary {
   text-transform: capitalize;
   font-weight: bold;
+}
+.tv-box {
+  position: fixed;
+  right: 10px;
+  bottom: -440px;
+  width: 360px;
+  height: 210px;
+  background: #000;
+  z-index: 999999;
+  padding: 0px;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+}
+.tv-box h4 {
+  margin-top: -40px;
+  color: #fff;
+}
+.tv-box i.fa-times {
+  float: right;
+  position: absolute;
+  top: -40px;
+  right: 15px;
+  padding: 5px;
+  background: #000;
+  border-radius: 50px;
+}
+.tv-box body {
+  margin: 0px !important;
 }
 .fallDown {
   animation-name: dropdown;
