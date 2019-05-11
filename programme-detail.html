@@ -394,58 +394,24 @@
     </footer>
     <div class="music_player">
       <div class="container">
-        <div class="btn1 controls">
-          <i class="fa fa-backward"></i>
-        </div>
-        <div class="btnPlay controls" id="playMusic">
+        <div class="btnPlay controls" id="playBtn">
           <i class="fa fa-play"></i>
         </div>
-        <div class="btnStop controls">
-          <i class="fa fa-pause"></i>
-        </div>
-        <div class="btn2 controls">
-          <i class="fa fa-forward"></i>
-        </div>
-        <div class="btnVolOn controls">
-          <i class="fa fa-volume-up"></i>
-        </div>
-        <div class="btnVolOff controls">
-          <i class="fa fa-volume-off"></i>
-        </div>
-        <div class="btnLoop controls">
-          <i class="fa fa-retweet"></i>
-        </div>
-        <input
-          type="range"
-          onchange="setVolume()"
-          id="volume1"
-          min="0"
-          max="1"
-          step="0.01"
-          value="0.5"
-        />
-        <span id="currtime">0:00</span>
-        <progress id="seek-obj" value="0" max="1"></progress>
-        <span id="tracktime">0:00</span>
-        <span id="trackslider" class="scrollname"></span>
-        <audio
-          id="player"
-          preload="auto"
-          controls="controls"
-          type="audio/mpeg"
-          ontimeupdate="displayTime()"
-        >
-          <source src="" type="audio/mpeg" />
+        watch live tv
         </audio>
       </div>
-      <span class="min-player"> </span>
+    </div>
+    <div class="tv-box" id="livetv">
+      <h4>Live TV</h4> <i class="fa fa-times" id="clsTv"></i>
+      <iframe src="http://raps-technologies.com/hi-impact.php" width="100%" height="100%" frameborder="0" style="position: absolute;top: 0;left: 
+0;width: 100%;height: 100%;" allow="autoplay" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
     </div>
     <div id="mobile-menu">
       <img src="../img/logo.png" alt="" class="logo">
       <i class="fa fa-bars"></i>
     </div>
-    <script type="text/javascript" src="../js/jquery.js"></script>
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function(){
             var clickEvent = false;
@@ -476,19 +442,19 @@
                 $('#myCarousel .list-group-item').outerHeight(triggerheight);
             });
     </script>
-    <script type="text/javascript" src="../js/tw-music-player.js"></script>
-    <script type="text/javascript" src="../js/news-ticker.js"></script>
-    <script type="text/javascript" src="../js/animate.js"></script>
-    <script
-      type="text/javascript"
-      src="../js/plugin/jquery-jplayer/jquery.jplayer.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="../js/plugin/ttw-music-player-min.js"
-    ></script>
-    <!--script type="text/javascript" src="js/countdown.js"></script-->
-
+    <script type="text/javascript" src="js/news-ticker.js"></script>
+    <script type="text/javascript" src="js/animate.js"></script>
+    <script>
+      var playBtn = document.getElementById("playBtn");
+      var clsTv = document.getElementById("clsTv");
+      var tvBox = document.getElementById("livetv");
+      playBtn.addEventListener("click", function(){
+        tvBox.style.bottom="40px";
+      }, false);
+      clsTv.addEventListener("click", function(){
+        tvBox.style.bottom="-440px";
+      }, false);
+    </script>
     <script>
     function minusWidth(sec_container, boxWidth, sec_conWidth, totalBox, boxes, box, backBtn, nextBtn) {
         var contMarginLeft = window
