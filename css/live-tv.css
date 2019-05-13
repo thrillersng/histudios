@@ -29,7 +29,7 @@
 
 body {
   margin: 0px;
-  background: #1c1d1d;
+  background: #0c0c0c;
   color: #fff;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
@@ -65,7 +65,7 @@ header {
   height: 65px;
   float: left;
   width: 100%;
-  z-index: 99999;
+  z-index: 99999999;
   background: none;
   transition: background 0.5s;
   -webkit-transition: background 0.5s;
@@ -170,7 +170,59 @@ nav h4 {
   margin: 0px;
   color: #fff;
 }
-
+nav h4 a {
+  padding: 0px;
+  font-size: 16px;
+  line-height: 35px;
+}
+nav button.btn-primary {
+  background: none;
+  border: none;
+}
+nav div.profile-menu {
+  width: 150px;
+  float: right;
+}
+nav div.profile-menu a {
+  display: block;
+  width: 100%;
+  float: left;
+}
+nav div.profile-menu div.other-profile-menu {
+  display: none;
+  background: #fff;
+  position: relative;
+  width: 100%;
+  height: auto;
+  float: left;
+  z-index: 999999;
+  border-radius: 2px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+}
+nav div.profile-menu div.other-profile-menu a {
+  line-height: 30px;
+  color: #070d1b;
+  padding: 5px 7px;
+  font-size: 12px;
+  border-bottom: 1px solid #eee;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+}
+nav div.profile-menu div.other-profile-menu a:last-child {
+  border: none;
+}
+nav div.profile-menu div.other-profile-menu a:hover {
+  background: #0c0c0c;
+  color: #eee;
+}
+nav div.profile-menu:hover div.other-profile-menu {
+  display: block;
+}
 section {
   width: 100%;
   float: left;
@@ -261,6 +313,13 @@ section.video-display img {
   margin: 0px;
   width: 100%;
 }
+section.video-display iframe {
+  position: absolute;
+  top: 0;
+  left: 7.5%;
+  width: 85%;
+  height: 100%;
+}
 div.comment-box {
   height: 350px;
   float: left;
@@ -335,7 +394,6 @@ nav li.last {
   float: right;
   margin-right: 5%;
   height: 65px;
-  overflow-x: hidden;
 }
 nav li.last:hover {
   background: none;
@@ -359,6 +417,7 @@ li.last button {
 }
 li.last a {
   float: right;
+  padding: 0px;
 }
 nav a {
   padding: 0px 20px;
@@ -884,8 +943,11 @@ audio {
   opacity: 0;
   display: none;
 }
-.playlist {
-  /* position: relative; display: block; float: left; background: #666; margin: 0px; */
+.marg-Top-40 {
+  margin-top: 40px;
+}
+.marg-Top-100 {
+  margin-top: 100px;
 }
 .active {
   text-decoration: none;
@@ -906,11 +968,14 @@ li:hover {
   position: absolute;
   width: 40%;
 }
+#player {
+  position: absolute;
+  width: 40%;
+}
 .controls {
   position: relative;
   float: left;
   display: block;
-  vertical-align: middle !important;
   margin: 12px 0px;
 }
 .controls :hover {
@@ -946,35 +1011,37 @@ li:hover {
   width: 250px;
 }
 .btnPlay {
-  margin: 5px;
+  margin: 5px auto;
 }
 .btnStop {
   display: none;
   margin: 5px;
 }
+
 .music_player {
   display: block;
-  background: rgba(0, 0, 0, 0.75);
-  width: 100%;
-  position: absolute;
+  /* background: #cd390d; */
+  width: 90px;
+  height: 115px;
+  overflow: hidden;
+  position: fixed;
+  right: 20px;
   z-index: 99999;
-  bottom: 0%;
-  border-top: 1px solid rgba(255, 250, 250, 0.21);
+  bottom: 15%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
   -moz-transition: all 500ms linear;
   -webkit-transition: all 500ms linear;
   -o-transition: all 500ms linear;
   transition: all 500ms linear;
 }
-.music_player .container {
-  margin: 0% 5%;
-}
+
 .music_player span {
   margin: 0px 15px;
   padding: 5px;
   float: left;
-}
-.min-player {
-  display: none;
 }
 .controls i.fa {
   color: #fff;
@@ -1804,8 +1871,7 @@ section.white {
   background: #000;
   padding: 80px 0px;
 }
-section.white div.col:nth-child(2) {
-}
+
 section.white div.wrapper {
   background-size: 100% 100%;
   display: block;
@@ -1869,6 +1935,59 @@ div.col:hover div.play-box {
   opacity: 1;
 }
 
+.more-info .btn-primary {
+  text-transform: capitalize;
+  font-weight: bold;
+  float: left;
+}
+.tv-box {
+  position: fixed;
+  right: 10px;
+  bottom: -440px;
+  width: 360px;
+  height: 210px;
+  background: #000;
+  z-index: 999999;
+  padding: 0px;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+}
+.tv-box h4 {
+  margin-top: -40px;
+  color: #fff;
+}
+.tv-box i.fa-times {
+  float: right;
+  position: absolute;
+  top: -40px;
+  right: 15px;
+  padding: 5px;
+  background: #000;
+  border-radius: 50px;
+}
+.tv-box body {
+  margin: 0px !important;
+}
+span.ratings {
+  height: 45px;
+  padding: 15px 0px;
+  margin-left: 7px;
+}
+ul.user-ratings {
+  width: auto;
+  float: left;
+  display: block;
+}
+ul.user-ratings li {
+  float: left;
+  padding: 2px;
+}
+ul.user-ratings li i.fa {
+  font-size: 10px;
+  color: gold;
+}
 div.blue-box {
   display: block;
   width: 100%;
@@ -2181,23 +2300,23 @@ ul.products-list li {
   display: block;
   padding: 0px;
   margin: 2px;
-  height: 300px;
+  height: 200px;
   transition: all 0.5s;
   -moz-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -ms-transition: all 0.5s;
 }
 ul.products-list li span {
-  display: none;
+  display: block;
   position: absolute;
   top: 0%;
-  left: -100%;
+  left: 0%;
   width: 100%;
   text-align: center;
-  line-height: 155px;
+  line-height: 150px;
   font-size: 40px;
   padding: 5px;
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.75));
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.45));
   transition: all 0.5s;
   -moz-transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -2205,13 +2324,14 @@ ul.products-list li span {
 }
 ul.products-list li span i {
   font-size: 40px;
+  color: #333;
 }
 ul.products-list li:hover {
   background: none;
 }
 ul.products-list li a {
   display: block;
-  height: 260px;
+  height: 200px;
   width: 290px;
   position: relative;
   font-size: 18px;
@@ -2228,12 +2348,26 @@ ul.products-list li a {
 ul.products-list li a div.col-md-12 {
   padding: 0px;
   font-size: 13px;
+  margin-top: 10px;
 }
 ul.products-list li:hover a {
   color: #333;
+  margin: -40px -60px 0px -40px;
+  z-index: 99999;
+  width: 400px;
+  height: 246px;
+  background: #fff;
+  box-shadow: 0px 0px 25px rgba(15, 15, 15, 0.71);
+  border: 1px solid #eee;
 }
 ul.products-list li:hover a span i {
   color: #fff;
+}
+ul.products-list li:hover a div.col-md-12 {
+  margin-top: -20px;
+  color: #fff;
+  z-index: 1;
+  padding: 15px;
 }
 ul.products-list a img {
   width: auto;
@@ -2248,31 +2382,44 @@ ul.products-list a img {
   -ms-transition: all 0.5s;
 }
 ul.products-list li:hover span {
-  display: block;
-  left: 0%;
+  line-height: 235px;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.75));
 }
 ul.products-list li:hover img {
-  transform: scale(1.1);
+  transform: scale(2);
 }
 ul.products-list h5 {
   font-size: 15px;
   text-transform: uppercase;
 }
 ul.products-list p {
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: normal;
 }
+ul.programmes {
+  width: 100%;
+  display: block;
+  margin-left: -40px;
+}
+ul.programmes li a {
+  height: 195px;
+  width: 280px;
+}
+
 div.prod-cont {
   margin-bottom: 20px;
   float: left;
   width: 100%;
-  overflow: hidden;
+  height: 300px;
+  overflow-x: hidden;
+  overflow-y: visible;
   transition: all 0.5s;
   -moz-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -ms-transition: all 0.5s;
 }
 div.prod-cont h4 {
-  margin: 40px;
+  margin: 10px 40px;
 }
 section.dynamic .container h4 {
   font-size: 45px;
@@ -2324,23 +2471,27 @@ a.cus-btn {
   -ms-transition: all 0.5s;
 }
 a.cus-btn i {
-  line-height: 50px;
+  line-height: 245px;
+  font-size: 45px;
 }
 div.prod-cont a.cus-btn {
   position: absolute;
-  z-index: 100;
-  bottom: 40%;
-  top: auto;
+  z-index: 9999999;
+  top: 0%;
+  bottom: auto;
+  height: 240px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 0px;
 }
 div.prod-cont a.cus-btn:hover {
-  color: #616deb;
+  color: #f1f1f1;
 }
 div.prod-cont a.right {
   left: auto;
-  right: 10%;
+  right: 0%;
 }
 div.prod-cont a.left {
-  left: 10%;
+  left: 0%;
   right: auto;
   display: none;
 }
@@ -2420,6 +2571,10 @@ div.special-box .container {
 
 .white-bg {
   background: #fff;
+  color: #070d1b;
+}
+.white-bg h4 {
+  color: #070d1b;
 }
 .yellow-plain-bg {
   background: #ffda0c;
@@ -2805,6 +2960,9 @@ span.status b {
 }
 div.auto-list i.fa.fa-star {
   margin: 1px;
+}
+div.auto-list h4 {
+  text-transform: uppercase;
 }
 .auto-list {
   border: thin solid #eee;

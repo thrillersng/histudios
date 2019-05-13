@@ -28,7 +28,7 @@
   </head>
 
   <body>
-    <header>
+    <header id="header">
       <nav>
         <ul>
           <li>
@@ -51,26 +51,16 @@
             <div class="carousel-caption downUp">
                 <div class="container">
                   <h4 class="flyInRight">
-                    <a href="#">Watch Live TV Online now</a>
+                    <a href="view.html">Watch Live TV Online now</a>
                   </h4>
                   <p class="flyInLeft"> no cable, watch anywhere, cancel anytime. 
-                   <br> Live TV from over 50+ Channels </p>
-                  <span class="call-to-action"><a href="#"> try for free</a></span> 
+                   <br> Live TV from over 50+ programmes </p>
+                  <span class="call-to-action"><a href="view.html"> try for free</a></span> 
                 </div>
             </div>
           </div>
           <!-- End Item -->
         </div>
-
-        <!-- Controls -->
-        <div class="carousel-controls">
-            <a class="carousel-control" href="#myCarousel" data-slide="prev">
-              <i class="fa fa-angle-left"></i>
-            </a>
-            <a class="carousel-control" href="#myCarousel" data-slide="next">
-              <i class="fa fa-angle-right"></i>
-            </a>
-          </div>
         </div>
       </div>
     </section>
@@ -78,12 +68,12 @@
       <div class="container">
         <div class="col-md-12"> 
           <div class="col-md-6">
-            <h4>50+ Channels</h4>
-            <p>Over 25 premium channels not available on Freeview or Freesat. Local sports and news. No cable box required.</p>
+            <h4>50+ programmes</h4>
+            <p>Over 25 premium programmes not available on Freeview or Freesat. Local sports and news. No cable box required.</p>
             <span class="call-to-action"><a href="#">Try now</a></span>
           </div>
           <div class="col-md-6">
-             <img src="img/channels.png" alt="" class="set-ht-300 white-bg">
+             <img src="img/live-tv-slide1.jpg" alt="" class="set-ht-300 white-bg">
           </div>
         </div>
       </div>
@@ -123,7 +113,7 @@
             	<div class="col-lg-12 showcase">
                 	<div class="col-md-4 auto-list">
                     <div class="container">
-                        <h4>BRONZE </h4>
+                        <h4>video </h4>
                         <div>
                                  <li> Feature One  <i class="fa fa-check"></i> </li>
                                  <li> Feature Two <i class="fa fa-check"></i> </li>
@@ -137,7 +127,7 @@
                     </div>
                 	<div class="col-md-4 auto-list auto-mega">
                     <div class="container">
-                        <h4>GOLD </h4>
+                        <h4>monthly </h4>
                         <div>
                                  <li> Feature One <i class="fa fa-check"></i> </li>
                                  <li> Feature Two <i class="fa fa-check"></i> </li>
@@ -153,7 +143,7 @@
                     </div>
                 	<div class="col-md-4 auto-list">
                     <div class="container">
-                        <h4>SILVER </h4>
+                        <h4>weekly </h4>
                         <div>
                                  <li> Feature One <i class="fa fa-check"></i> </li>
                                  <li> Feature Two <i class="fa fa-check"></i> </li>
@@ -289,7 +279,17 @@
                 $('#myCarousel .list-group-item').outerHeight(triggerheight);
             });
     </script>
-    <script type="text/javascript" src="js/news-ticker.js"></script>
+    <script>
+        window.addEventListener("scroll", function(e){
+        var head = document.getElementById('header');
+        var yPos = window.scrollY;
+        if(yPos > 70){
+          head.style.background="#000";
+        }else{
+          head.style.background="none";
+        }
+      }, false);
+    </script>
 
   </body>
 </html>

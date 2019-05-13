@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <title>Hi Impact Television</title>
+    <title>Hi Impact | Profile</title>
     <meta
       name="keywords"
       content="Hi Impact Studios, HD Television, High Definition TV, Nigeria"
@@ -26,46 +26,34 @@
       crossorigin="anonymous"
     />
     <link
-      rel="stylesheet"
-      href="css/font-awesome/css/fontawesome-all.css"
-      type="text/css"
-    />
-    <link type="text/css" href="css/tv-slider.css" rel="stylesheet" />
-    <link type="text/css" href="css/tv.css" rel="stylesheet" />
-    <link type="text/css" href="css/tv-responsive.css" rel="stylesheet" />
+    rel="stylesheet"
+    href="css/font-awesome/css/fontawesome-all.css"
+    type="text/css"
+  />
+    <link type="text/css" href="css/live-tv-slide.css" rel="stylesheet" />
+    <link type="text/css" href="css/live-tv.css" rel="stylesheet" />
+    <link type="text/css" href="css/live-tv-responsive.css" rel="stylesheet" />
   </head>
 
   <body>
-    <header>
+    <header id="header">
       <nav>
         <ul>
           <li>
-            <a href="index.html" class="no-padding"
-              ><img src="img/logo-tv.png"
-            /></a>
+            <img src="img/logo-tv.png" />
           </li>
           <li>
             <a href="livetv.html">Live TV <i class="fa fa-angle-down"></i></a>
             <div class="dropdown downUp">
               <div class="container">
-                <div class="col-md-6">
-                  <h4>Hi Impact Studios</h4>
-                  <p>
-                    Join our teaming online audience for live coverage of
-                    premium entertainment, informative and educative content.
-                    See programmes online as they unfold, enjoy access to the
-                    global community of our online subscribers by leaving your
-                    comments and views.
-                  </p>
-                  <span class="call-to-action"
-                    ><a href="livetv.html"
-                      ><i class="fas fa-tv"></i> Watch Now</a
-                    ></span
-                  >
-                </div>
-                <div class="col-md-6">
-                  <img src="img/remote.png" alt="" style="height:200px;" />
-                </div>
+                  <div class="col-md-6">
+                    <h4>Hi Impact Studios</h4>
+                    <p>Join our teaming online audience for live coverage of premium entertainment, informative and educative content. See programmes online as they unfold, enjoy access to the global community of our online subscribers by leaving your comments and views. </p>
+                    <span class="call-to-action"><a href="livetv.html"><i class="fas fa-tv"></i> Watch Now</a></span> 
+                  </div>
+                  <div class="col-md-6">
+                    <img src="img/remote.png" alt="" style="height:200px;">
+                  </div>
               </div>
             </div>
           </li>
@@ -121,117 +109,57 @@
             <a href="movies.html">Movies</a>
           </li>
           <li class="last">
-            <a href="#"><i class="fa fa-user-lock"></i> Login </a>
+            <div class="profile-menu">
+              <a href="#"> <i class="fas fa-user-circle"></i> John Doe </a>
+              <div class="other-profile-menu">
+                <a href="profile.html">My Profile</a>
+                <a href="watchlist.html">My Watchlist</a>
+                <a href="recent.html">Recent Views</a>
+                <a href="subscription.html">Subscription</a>
+                <a href="sign-in.html"> <i class="fa fa-lock"></i> Sign Out</a>
+              </div>
+            </div>
             <form action="">
-              <input type="search" class="form-control" id="" name="" />
-              <button class="btn btn-primary">
-                <i class="fa fa-search"></i>
-              </button>
+              <input type="search" class="form-control" id="" name="">
+              <button class="btn btn-primary"><i class="fa fa-search"></i></button>
             </form>
           </li>
         </ul>
       </nav>
     </header>
-    <section class="padded marg-60">
-      <div class="center-place">
-        <div class="col-md-12 bold-content">
-          <h4 class="blu-line">Programme Schedule</h4>
-          <table class="marg-Top-30">
-            <colgroup>
-              <col />
-              <col />
-              <col />
-              <col />
-              <col />
-              <col />
-              <col />
-              <col />
-            </colgroup>
-            <thead>
-              <tr>
-                <th scope="col">Programme</th>
-                <th scope="col">Mon</th>
-                <th scope="col">Tues</th>
-                <th scope="col">Wed</th>
-                <th scope="col">Thur</th>
-                <th scope="col">Fri</th>
-                <th scope="col">Sat</th>
-                <th scope="col">Sun</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Tea or Coffea</td>
-                <td>10am - 12pm</td>
-                <td>10am - 12pm</td>
-                <td>10am - 12pm</td>
-                <td>10am - 12pm</td>
-                <td>10am - 12pm</td>
-                <td>11am - 12pm</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>Mid day special</td>
-                <td>12pm-2pm</td>
-                <td>12pm-2pm</td>
-                <td>12pm-2pm</td>
-                <td>12pm-2pm</td>
-                <td>12pm-2pm</td>
-                <td>11am- 2pm</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Medic Lounge</td>
-                <td>2pm-2:30pm</td>
-                <td>2:40pm-3:30pm</td>
-                <td>2:40pm-3:30pm</td>
-                <td>2:40pm-3:30pm</td>
-                <td>2:40pm-3:30pm</td>
-                <td>-</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>Legends</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>America's Got Talent</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>4:15pm - 5:15pm</td>
-              </tr>
-              <tr>
-                <td>Mon</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Mon</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
+    <section class="marg-Top-100 white-bg">
+      <div class="container">
+        <div class="col-md-6">
+          <h4>Profile</h4>
+          <form action="">
+            <div class="form-group col-md-12">
+              <label for="">First Name</label>
+              <input type="text" class="form-control" name="" id="" placeholder="First Name" value="John"> 
+            </div>
+            <div class="form-group col-md-12">
+              <label for="">Last Name</label>
+              <input type="text" class="form-control" name="" id="" placeholder="First Name" value="Doe"> 
+            </div>
+            <div class="form-group col-md-12">
+              <label for="">Email</label>
+              <input type="email" class="form-control" name="" id="" placeholder="johndoe@email.com" value="johndoe@email.com"> 
+            </div>
+            <div class="form-group col-md-12">
+              <label for="">Password</label>
+              <input type="password" class="form-control" name="" id="" placeholder="First Name" value="password"> 
+            </div>
+            <div class="form-group col-md-12">
+              <button type="submit" class="btn btn-primary" name="" id="">Save Changes <i class="fa fa-paper-plane"></i></button> 
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h4>Current Subscription</h4>
+          <p>Monthly Subscription</p>
+          <h4>Next Billing</h4>
+          <p>20th May 2019</p>
+          <h4>Total Billed</h4>
+          <p>NGN 5,000.00</p>
         </div>
       </div>
     </section>
@@ -333,11 +261,11 @@
 0;width: 100%;height: 100%;" allow="autoplay" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
     </div>
     <div id="mobile-menu">
-      <img src="../img/logo.png" alt="" class="logo" />
+      <img src="img/logo-tv.png" alt="" class="logo-tv" />
       <i class="fa fa-bars"></i>
     </div>
-    <script type="text/javascript" src="../js/jquery.js"></script>
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script>
       $(document).ready(function() {
         var clickEvent = false;
@@ -376,20 +304,8 @@
         $("#myCarousel .list-group-item").outerHeight(triggerheight);
       });
     </script>
-    <script type="text/javascript" src="../js/tw-music-player.js"></script>
-    <script type="text/javascript" src="../js/news-ticker.js"></script>
-    <script type="text/javascript" src="../js/animate.js"></script>
-    <script
-      type="text/javascript"
-      src="../js/plugin/jquery-jplayer/jquery.jplayer.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="../js/plugin/ttw-music-player-min.js"
-    ></script>
-    <!--script type="text/javascript" src="js/countdown.js"></script-->
-
     <script>
+
       window.addEventListener("scroll", function(e){
         var head = document.getElementById('header');
         var yPos = window.scrollY;
@@ -409,8 +325,6 @@
       clsTv.addEventListener("click", function(){
         tvBox.style.bottom="-440px";
       }, false);
-
-
 
       function minusWidth(
         sec_container,
@@ -451,7 +365,6 @@
           //do nothing
         }
       }
-
       function plusWidth(
         sec_container,
         boxWidth,
@@ -472,7 +385,6 @@
         var chkWidth = "-" + boxWidth;
         //console.log(setRightPos);
         //console.log(sec_contWidth);
-
         if (contMarginLeft == chkWidth) {
           var nextBtnDisplay = window
             .getComputedStyle(nextBtn)
@@ -494,7 +406,6 @@
           sec_container.style.marginLeft = setRightPos;
         }
       }
-
       var prevBtn = document.querySelector("a.box-1-prev");
       prevBtn.addEventListener(
         "click",
@@ -524,7 +435,6 @@
         },
         false
       );
-
       var nextBtn = document.querySelector("a.box-1-next");
       nextBtn.addEventListener(
         "click",
@@ -554,7 +464,6 @@
         },
         false
       );
-
       var prevBtn = document.querySelector("a.box-2-prev");
       prevBtn.addEventListener(
         "click",
@@ -584,7 +493,6 @@
         },
         false
       );
-
       var nextBtn = document.querySelector("a.box-2-next");
       nextBtn.addEventListener(
         "click",
@@ -614,7 +522,6 @@
         },
         false
       );
-
       var prevBtn = document.querySelector("a.box-3-prev");
       prevBtn.addEventListener(
         "click",
@@ -644,7 +551,6 @@
         },
         false
       );
-
       var nextBtn = document.querySelector("a.box-3-next");
       nextBtn.addEventListener(
         "click",

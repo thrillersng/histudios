@@ -57,7 +57,7 @@
             <div class="dropdown downUp">
               <div class="container">
                 <div class="col-md-3">
-                  <h4>Entertainment</h4>
+                  <h4><a href="programme-category.html">Entertainment</a></h4>
                   <ul>
                     <li><a href="programme-detail.html">America’s got talent</a></li>
                     <li><a href="programme-detail.html">Hole in the wall</a></li>
@@ -67,7 +67,7 @@
                   </ul>
                 </div>
                 <div class="col-md-3">
-                  <h4>Telenovelas</h4>
+                  <h4><a href="programme-category.html">Telenovelas</a></h4>
                   <ul>
                     <li><a href="programme-detail.html">So much love</a></li>
                     <li><a href="programme-detail.html">Paloma and Diego</a></li>
@@ -76,7 +76,7 @@
                   </ul>
                 </div>
                 <div class="col-md-3">
-                  <h4>Educational</h4>
+                  <h4><a href="programme-category.html">Educational</a></h4>
                   <ul>
                     <li><a href="programme-detail.html">French for beginners</a></li>
                     <li><a href="programme-detail.html">Ankara craft</a></li>
@@ -84,7 +84,7 @@
                   </ul>
                 </div>
                 <div class="col-md-3">
-                  <h4>Inspirational</h4>
+                  <h4><a href="programme-category.html">Inspirational</a></h4>
                   <ul>
                     <li><a href="programme-detail.html">Legends</a></li>
                     <li><a href="programme-detail.html">Yours truly</a></li>
@@ -95,13 +95,10 @@
             </div>
           </li>
           <li>
-            <a href="programme.html">Shows</a>
+            <a href="shows.html">Shows</a>
           </li>
           <li>
-            <a href="programme.html">Movies</a>
-          </li>
-          <li>
-            <a href="programme.html">Advertise</a>
+            <a href="movies.html">Movies</a>
           </li>
           <li class="last">
             <a href="#"><i class="fa fa-user-lock"></i> Login </a>
@@ -536,51 +533,17 @@
     </footer>
     <div class="music_player">
       <div class="container">
-        <div class="btn1 controls">
-          <i class="fa fa-backward"></i>
-        </div>
-        <div class="btnPlay controls" id="playMusic">
+        <div class="btnPlay controls" id="playBtn">
           <i class="fa fa-play"></i>
         </div>
-        <div class="btnStop controls">
-          <i class="fa fa-pause"></i>
-        </div>
-        <div class="btn2 controls">
-          <i class="fa fa-forward"></i>
-        </div>
-        <div class="btnVolOn controls">
-          <i class="fa fa-volume-up"></i>
-        </div>
-        <div class="btnVolOff controls">
-          <i class="fa fa-volume-off"></i>
-        </div>
-        <div class="btnLoop controls">
-          <i class="fa fa-retweet"></i>
-        </div>
-        <input
-          type="range"
-          onchange="setVolume()"
-          id="volume1"
-          min="0"
-          max="1"
-          step="0.01"
-          value="0.5"
-        />
-        <span id="currtime">0:00</span>
-        <progress id="seek-obj" value="0" max="1"></progress>
-        <span id="tracktime">0:00</span>
-        <span id="trackslider" class="scrollname"></span>
-        <audio
-          id="player"
-          preload="auto"
-          controls="controls"
-          type="audio/mpeg"
-          ontimeupdate="displayTime()"
-        >
-          <source src="" type="audio/mpeg" />
+        watch live tv
         </audio>
       </div>
-      <span class="min-player"> </span>
+    </div>
+    <div class="tv-box" id="livetv">
+      <h4>Live TV</h4> <i class="fa fa-times" id="clsTv"></i>
+      <iframe src="http://raps-technologies.com/hi-impact.php" width="100%" height="100%" frameborder="0" style="position: absolute;top: 0;left: 
+0;width: 100%;height: 100%;" allow="autoplay" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
     </div>
     <div id="mobile-menu">
       <img src="img/logo-tv.png" alt="" class="logo-tv">
@@ -621,17 +584,29 @@
     <script type="text/javascript" src="js/tw-music-player.js"></script>
     <script type="text/javascript" src="js/news-ticker.js"></script>
     <script type="text/javascript" src="js/animate.js"></script>
-    <script
-      type="text/javascript"
-      src="js/plugin/jquery-jplayer/jquery.jplayer.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="js/plugin/ttw-music-player-min.js"
-    ></script>
-    <!--script type="text/javascript" src="js/countdown.js"></script-->
 
     <script>
+            
+    window.addEventListener("scroll", function(e){
+        var head = document.getElementById('header');
+        var yPos = window.scrollY;
+        if(yPos > 70){
+          head.style.background="#000";
+        }else{
+          head.style.background="none";
+        }
+      }, false);
+
+      var playBtn = document.getElementById("playBtn");
+      var clsTv = document.getElementById("clsTv");
+      var tvBox = document.getElementById("livetv");
+      playBtn.addEventListener("click", function(){
+        tvBox.style.bottom="40px";
+      }, false);
+      clsTv.addEventListener("click", function(){
+        tvBox.style.bottom="-440px";
+      }, false);
+
     function minusWidth(sec_container, boxWidth, sec_conWidth, totalBox, boxes, box, backBtn, nextBtn) {
         var contMarginLeft = window
           .getComputedStyle(sec_container)

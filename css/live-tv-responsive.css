@@ -144,6 +144,10 @@ div {
   }
 }
 @media (max-width: 960px) {
+  img.logo-tv {
+    height: 60px;
+    padding: 10px;
+  }
   nav {
     display: none;
   }
@@ -207,7 +211,7 @@ div {
     width: 100%;
   }
   footer img {
-    width: 50%;
+    height: 100px;
   }
   .col-md-3 {
     width: 100%;

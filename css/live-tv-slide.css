@@ -2,12 +2,12 @@ div.item {
   width: 100%;
 }
 #myCarousel .carousel-caption {
-  left: 15%;
+  left: 7%;
   height: 50%;
   bottom: 10%;
   padding: 10px 0px;
   text-shadow: none;
-  width: 70%;
+  width: 86%;
   text-align: center;
 }
 .carousel-caption div.banner-content {
@@ -229,6 +229,26 @@ div.item {
 .simple-ticker li a {
   color: #fff;
   font-weight: bold;
+}
+.carousel-inner > .item.active::after {
+  width: 100%;
+  background: linear-gradient(rgba(20, 20, 20, 0), #0b0b0b 89.08%);
+  height: 300px;
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+}
+.carousel-caption .left-aligned h4 {
+  text-align: left;
+}
+.carousel-caption .left-aligned p {
+  text-align: left;
+}
+.carousel-caption .left-aligned span.call-to-action {
+  margin: 10px 0px;
+  float: left;
 }
 @media (max-width: 640px) {
   .carousel-inner {

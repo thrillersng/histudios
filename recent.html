@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <title>Hi Impact Television</title>
+    <title>Hi Impact | Recent Views</title>
     <meta
       name="keywords"
       content="Hi Impact Studios, HD Television, High Definition TV, Nigeria"
@@ -26,46 +26,34 @@
       crossorigin="anonymous"
     />
     <link
-      rel="stylesheet"
-      href="css/font-awesome/css/fontawesome-all.css"
-      type="text/css"
-    />
-    <link type="text/css" href="css/tv-slider.css" rel="stylesheet" />
-    <link type="text/css" href="css/tv.css" rel="stylesheet" />
-    <link type="text/css" href="css/tv-responsive.css" rel="stylesheet" />
+    rel="stylesheet"
+    href="css/font-awesome/css/fontawesome-all.css"
+    type="text/css"
+  />
+    <link type="text/css" href="css/live-tv-slide.css" rel="stylesheet" />
+    <link type="text/css" href="css/live-tv.css" rel="stylesheet" />
+    <link type="text/css" href="css/live-tv-responsive.css" rel="stylesheet" />
   </head>
 
   <body>
-    <header>
+    <header id="header">
       <nav>
         <ul>
           <li>
-            <a href="index.html" class="no-padding"
-              ><img src="img/logo-tv.png"
-            /></a>
+            <img src="img/logo-tv.png" />
           </li>
           <li>
             <a href="livetv.html">Live TV <i class="fa fa-angle-down"></i></a>
             <div class="dropdown downUp">
               <div class="container">
-                <div class="col-md-6">
-                  <h4>Hi Impact Studios</h4>
-                  <p>
-                    Join our teaming online audience for live coverage of
-                    premium entertainment, informative and educative content.
-                    See programmes online as they unfold, enjoy access to the
-                    global community of our online subscribers by leaving your
-                    comments and views.
-                  </p>
-                  <span class="call-to-action"
-                    ><a href="livetv.html"
-                      ><i class="fas fa-tv"></i> Watch Now</a
-                    ></span
-                  >
-                </div>
-                <div class="col-md-6">
-                  <img src="img/remote.png" alt="" style="height:200px;" />
-                </div>
+                  <div class="col-md-6">
+                    <h4>Hi Impact Studios</h4>
+                    <p>Join our teaming online audience for live coverage of premium entertainment, informative and educative content. See programmes online as they unfold, enjoy access to the global community of our online subscribers by leaving your comments and views. </p>
+                    <span class="call-to-action"><a href="livetv.html"><i class="fas fa-tv"></i> Watch Now</a></span> 
+                  </div>
+                  <div class="col-md-6">
+                    <img src="img/remote.png" alt="" style="height:200px;">
+                  </div>
               </div>
             </div>
           </li>
@@ -121,117 +109,402 @@
             <a href="movies.html">Movies</a>
           </li>
           <li class="last">
-            <a href="#"><i class="fa fa-user-lock"></i> Login </a>
+            <div class="profile-menu">
+              <a href="#"> <i class="fas fa-user-circle"></i> John Doe </a>
+              <div class="other-profile-menu">
+                <a href="profile.html">My Profile</a>
+                <a href="watchlist.html">My Watchlist</a>
+                <a href="recent.html">Recent Views</a>
+                <a href="subscription.html">Subscription</a>
+                <a href="sign-in.html"> <i class="fa fa-lock"></i> Sign Out</a>
+              </div>
+            </div>
             <form action="">
-              <input type="search" class="form-control" id="" name="" />
-              <button class="btn btn-primary">
-                <i class="fa fa-search"></i>
-              </button>
+              <input type="search" class="form-control" id="" name="">
+              <button class="btn btn-primary"><i class="fa fa-search"></i></button>
             </form>
           </li>
         </ul>
       </nav>
     </header>
-    <section class="padded marg-60">
-      <div class="center-place">
-        <div class="col-md-12 bold-content">
-          <h4 class="blu-line">Programme Schedule</h4>
-          <table class="marg-Top-30">
-            <colgroup>
-              <col />
-              <col />
-              <col />
-              <col />
-              <col />
-              <col />
-              <col />
-              <col />
-            </colgroup>
-            <thead>
-              <tr>
-                <th scope="col">Programme</th>
-                <th scope="col">Mon</th>
-                <th scope="col">Tues</th>
-                <th scope="col">Wed</th>
-                <th scope="col">Thur</th>
-                <th scope="col">Fri</th>
-                <th scope="col">Sat</th>
-                <th scope="col">Sun</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Tea or Coffea</td>
-                <td>10am - 12pm</td>
-                <td>10am - 12pm</td>
-                <td>10am - 12pm</td>
-                <td>10am - 12pm</td>
-                <td>10am - 12pm</td>
-                <td>11am - 12pm</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>Mid day special</td>
-                <td>12pm-2pm</td>
-                <td>12pm-2pm</td>
-                <td>12pm-2pm</td>
-                <td>12pm-2pm</td>
-                <td>12pm-2pm</td>
-                <td>11am- 2pm</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Medic Lounge</td>
-                <td>2pm-2:30pm</td>
-                <td>2:40pm-3:30pm</td>
-                <td>2:40pm-3:30pm</td>
-                <td>2:40pm-3:30pm</td>
-                <td>2:40pm-3:30pm</td>
-                <td>-</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>Legends</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>America's Got Talent</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>4:15pm - 5:15pm</td>
-              </tr>
-              <tr>
-                <td>Mon</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Mon</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
+    <section class="banner">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/slide3.jpg" alt="Hi Impact Studios" />
+            <div class="carousel-caption programme-caption downUp">
+                <div class="col-md-6 left-aligned">
+                  <h4 class="flyInRight programme-title">
+                    <a href="#">America’s got talent</a>
+                  </h4>
+                  <p class="flyInLeft">
+                    The world's talented yet undiscovered performers of all ages
+                  </p>
+                  <span class="call-to-action"><a href="watch-programme.html"><i class="fas fa-play"></i> Watch Now</a></span>
+                </div>      
+            </div>
+          </div>
+          <!-- End Item -->
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="no-margin">
+      <div class="container">
+        <div class="prod-cont">
+          <h4>Recently Viewed</h4>
+          <a href="#" class="cus-btn right box-1-prev">
+            <i class="fa fa-angle-right"></i
+          ></a>
+          <a href="#" class="cus-btn left box-1-next">
+            <i class="fa fa-angle-left"></i
+          ></a>
+          <ul class="products-list main-box-1">
+            <li class="news-box-1">
+              <a href="view.html">
+                <img src="img/cover_pic/1.jpg" />
+                <div class="col-md-12">
+                  <h5>Alex & Eve</h5>
+                  <p>
+                    A Greek Orthodox teacher falls in love with a Lebanese
+                    Muslim lawyer
+                  </p>
+                </div>
+                <span><i class="fa fa-play-circle"></i></span>
+              </a>
+            </li>
+            <li class="news-box-1">
+              <a href="view.html">
+                <img src="img/cover_pic/2.jpg" />
+                <div class="col-md-12">
+                  <h5>America's got talent</h5>
+                  <p>
+                    The world's talented yet undiscovered performers of all ages
+                  </p>
+                </div>
+                <span><i class="fa fa-play-circle"></i></span>
+              </a>
+            </li>
+            <li class="news-box-1">
+              <a href="view.html">
+                <img src="img/cover_pic/3.jpg" />
+                <div class="col-md-12">
+                  <h5>it had to be you</h5>
+                  <p>
+                    Sonia (Cristin Milioti), a neurotic and charming jingle
+                    writer, dreams of having an exciting life.
+                  </p>
+                </div>
+                <span><i class="fa fa-play-circle"></i></span>
+              </a>
+            </li>
+            <li class="news-box-1">
+              <a href="view.html">
+                <img src="img/cover_pic/4.jpg" />
+                <div class="col-md-12">
+                  <h5>Weakness</h5>
+                  <p>A teacher loses his wife and moorings over a summer.</p>
+                </div>
+                <span><i class="fa fa-play-circle"></i></span>
+              </a>
+            </li>
+            <li class="news-box-1">
+              <a href="view.html">
+                <img src="img/cover_pic/1.jpg" />
+                <div class="col-md-12">
+                  <h5>Alex & Eve</h5>
+                  <p>
+                    A Greek Orthodox teacher falls in love with a Lebanese
+                    Muslim lawyer
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="news-box-1">
+              <a href="view.html">
+                <img src="img/cover_pic/2.jpg" />
+                <div class="col-md-12">
+                  <h5>America's got talent</h5>
+                  <p>
+                    The world's talented yet undiscovered performers of all ages
+                  </p>
+                </div>
+                <span><i class="fa fa-play-circle"></i></span>
+              </a>
+            </li>
+            <li class="news-box-1">
+              <a href="view.html">
+                <img src="img/cover_pic/3.jpg" />
+                <div class="col-md-12">
+                  <h5>it had to be you</h5>
+                  <p>
+                    Sonia (Cristin Milioti), a neurotic and charming jingle
+                    writer, dreams of having an exciting life.
+                  </p>
+                </div>
+                <span><i class="fa fa-play-circle"></i></span>
+              </a>
+            </li>
+            <li class="news-box-1">
+              <a href="view.html">
+                <img src="img/cover_pic/4.jpg" />
+                <div class="col-md-12">
+                  <h5>Weakness</h5>
+                  <p>A teacher loses his wife and moorings over a summer.</p>
+                </div>
+                <span><i class="fa fa-play-circle"></i></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="prod-cont">
+          <h4>Top Movies</h4>
+          <a href="#" class="cus-btn right box-2-prev">
+            <i class="fa fa-angle-right"></i
+          ></a>
+          <a href="#" class="cus-btn left box-2-next">
+            <i class="fa fa-angle-left"></i
+          ></a>
+          <ul class="products-list main-box-2">
+            <li class="news-box-2">
+              <a href="view.html">
+                <img src="img/cover_pic/1.jpg" />
+                <div class="col-md-12">
+                  <h5>Movie Title</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Minima saepe omnis facere illo quia rerum doloremque
+                    exercitationem
+                  </p>
+                </div>
+                <span><i class="fa fa-play-circle"></i></span>
+              </a>
+            </li>
+            <li class="news-box-2">
+              <a href="view.html">
+                <img src="img/cover_pic/2.jpg" />
+                <div class="col-md-12">
+                  <h5>Movie Title</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Minima saepe omnis facere illo quia rerum doloremque
+                    exercitationem
+                  </p>
+                </div>
+                <span><i class="fa fa-play-circle"></i></span>
+              </a>
+            </li>
+            <li class="news-box-2">
+              <a href="view.html">
+                <img src="img/cover_pic/3.jpg" />
+                <div class="col-md-12">
+                  <h5>Movie Title</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Minima saepe omnis facere illo quia rerum doloremque
+                    exercitationem
+                  </p>
+                </div>
+                <span><i class="fa fa-play-circle"></i></span>
+              </a>
+            </li>
+            <li class="news-box-2">
+              <a href="view.html">
+                <img src="img/cover_pic/1.jpg" />
+                <div class="col-md-12">
+                  <h5>Movie Title</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Minima saepe omnis facere illo quia rerum doloremque
+                    exercitationem
+                  </p>
+                </div>
+                <span><i class="fa fa-play-circle"></i></span>
+              </a>
+            </li>
+            <li class="news-box-2">
+              <a href="view.html">
+                <img src="img/cover_pic/1.jpg" />
+                <div class="col-md-12">
+                  <h5>Movie Title</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Minima saepe omnis facere illo quia rerum doloremque
+                    exercitationem
+                  </p>
+                </div>
+                <span><i class="fa fa-play-circle"></i></span>
+              </a>
+            </li>
+            <li class="news-box-2">
+              <a href="view.html">
+                <img src="img/cover_pic/1.jpg" />
+                <div class="col-md-12">
+                  <h5>Movie Title</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Minima saepe omnis facere illo quia rerum doloremque
+                    exercitationem
+                  </p>
+                </div>
+                <span><i class="fa fa-play-circle"></i></span>
+              </a>
+            </li>
+            <li class="news-box-2">
+              <a href="view.html">
+                <img src="img/cover_pic/1.jpg" />
+                <div class="col-md-12">
+                  <h5>Movie Title</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Minima saepe omnis facere illo quia rerum doloremque
+                    exercitationem
+                  </p>
+                </div>
+                <span><i class="fa fa-play-circle"></i></span>
+              </a>
+            </li>
+            <li class="news-box-2">
+              <a href="view.html">
+                <img src="img/cover_pic/1.jpg" />
+                <div class="col-md-12">
+                  <h5>Movie Title</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Minima saepe omnis facere illo quia rerum doloremque
+                    exercitationem
+                  </p>
+                </div>
+                <span><i class="fa fa-play-circle"></i></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="prod-cont">
+          <h4>Top Shows</h4>
+          <a href="#" class="cus-btn right box-3-prev">
+            <i class="fa fa-angle-right"></i
+          ></a>
+          <a href="#" class="cus-btn left box-3-next">
+            <i class="fa fa-angle-left"></i
+          ></a>
+          <ul class="products-list main-box-3">
+            <li class="news-box-3">
+              <a href="view.html">
+                <img src="img/cover_pic/1.jpg" />
+                <div class="col-md-12">
+                  <h5>Movie Title</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Minima saepe omnis facere illo quia rerum doloremque
+                    exercitationem
+                  </p>
+                </div>
+                <span><i class="fa fa-play-circle"></i></span>
+              </a>
+            </li>
+            <li class="news-box-3">
+              <a href="view.html">
+                <img src="img/cover_pic/2.jpg" />
+                <div class="col-md-12">
+                  <h5>Movie Title</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Minima saepe omnis facere illo quia rerum doloremque
+                    exercitationem
+                  </p>
+                </div>
+                <span><i class="fa fa-play-circle"></i></span>
+              </a>
+            </li>
+            <li class="news-box-3">
+              <a href="view.html">
+                <img src="img/cover_pic/3.jpg" />
+                <div class="col-md-12">
+                  <h5>Movie Title</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Minima saepe omnis facere illo quia rerum doloremque
+                    exercitationem
+                  </p>
+                </div>
+                <span><i class="fa fa-play-circle"></i></span>
+              </a>
+            </li>
+            <li class="news-box-3">
+              <a href="view.html">
+                <img src="img/cover_pic/1.jpg" />
+                <div class="col-md-12">
+                  <h5>Movie Title</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Minima saepe omnis facere illo quia rerum doloremque
+                    exercitationem
+                  </p>
+                </div>
+                <span><i class="fa fa-play-circle"></i></span>
+              </a>
+            </li>
+            <li class="news-box-3">
+              <a href="view.html">
+                <img src="img/cover_pic/1.jpg" />
+                <div class="col-md-12">
+                  <h5>Movie Title</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Minima saepe omnis facere illo quia rerum doloremque
+                    exercitationem
+                  </p>
+                </div>
+                <span><i class="fa fa-play-circle"></i></span>
+              </a>
+            </li>
+            <li class="news-box-3">
+              <a href="view.html">
+                <img src="img/cover_pic/1.jpg" />
+                <div class="col-md-12">
+                  <h5>Movie Title</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Minima saepe omnis facere illo quia rerum doloremque
+                    exercitationem
+                  </p>
+                </div>
+                <span><i class="fa fa-play-circle"></i></span>
+              </a>
+            </li>
+            <li class="news-box-3">
+              <a href="view.html">
+                <img src="img/cover_pic/1.jpg" />
+                <div class="col-md-12">
+                  <h5>Movie Title</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Minima saepe omnis facere illo quia rerum doloremque
+                    exercitationem
+                  </p>
+                </div>
+                <span><i class="fa fa-play-circle"></i></span>
+              </a>
+            </li>
+            <li class="news-box-3">
+              <a href="view.html">
+                <img src="img/cover_pic/1.jpg" />
+                <div class="col-md-12">
+                  <h5>Movie Title</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Minima saepe omnis facere illo quia rerum doloremque
+                    exercitationem
+                  </p>
+                </div>
+                <span><i class="fa fa-play-circle"></i></span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -333,11 +606,11 @@
 0;width: 100%;height: 100%;" allow="autoplay" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
     </div>
     <div id="mobile-menu">
-      <img src="../img/logo.png" alt="" class="logo" />
+      <img src="img/logo-tv.png" alt="" class="logo-tv" />
       <i class="fa fa-bars"></i>
     </div>
-    <script type="text/javascript" src="../js/jquery.js"></script>
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script>
       $(document).ready(function() {
         var clickEvent = false;
@@ -376,20 +649,8 @@
         $("#myCarousel .list-group-item").outerHeight(triggerheight);
       });
     </script>
-    <script type="text/javascript" src="../js/tw-music-player.js"></script>
-    <script type="text/javascript" src="../js/news-ticker.js"></script>
-    <script type="text/javascript" src="../js/animate.js"></script>
-    <script
-      type="text/javascript"
-      src="../js/plugin/jquery-jplayer/jquery.jplayer.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="../js/plugin/ttw-music-player-min.js"
-    ></script>
-    <!--script type="text/javascript" src="js/countdown.js"></script-->
-
     <script>
+
       window.addEventListener("scroll", function(e){
         var head = document.getElementById('header');
         var yPos = window.scrollY;
@@ -409,8 +670,6 @@
       clsTv.addEventListener("click", function(){
         tvBox.style.bottom="-440px";
       }, false);
-
-
 
       function minusWidth(
         sec_container,
@@ -451,7 +710,6 @@
           //do nothing
         }
       }
-
       function plusWidth(
         sec_container,
         boxWidth,
@@ -472,7 +730,6 @@
         var chkWidth = "-" + boxWidth;
         //console.log(setRightPos);
         //console.log(sec_contWidth);
-
         if (contMarginLeft == chkWidth) {
           var nextBtnDisplay = window
             .getComputedStyle(nextBtn)
@@ -494,7 +751,6 @@
           sec_container.style.marginLeft = setRightPos;
         }
       }
-
       var prevBtn = document.querySelector("a.box-1-prev");
       prevBtn.addEventListener(
         "click",
@@ -524,7 +780,6 @@
         },
         false
       );
-
       var nextBtn = document.querySelector("a.box-1-next");
       nextBtn.addEventListener(
         "click",
@@ -554,7 +809,6 @@
         },
         false
       );
-
       var prevBtn = document.querySelector("a.box-2-prev");
       prevBtn.addEventListener(
         "click",
@@ -584,7 +838,6 @@
         },
         false
       );
-
       var nextBtn = document.querySelector("a.box-2-next");
       nextBtn.addEventListener(
         "click",
@@ -614,7 +867,6 @@
         },
         false
       );
-
       var prevBtn = document.querySelector("a.box-3-prev");
       prevBtn.addEventListener(
         "click",
@@ -644,7 +896,6 @@
         },
         false
       );
-
       var nextBtn = document.querySelector("a.box-3-next");
       nextBtn.addEventListener(
         "click",
