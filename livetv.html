@@ -17,11 +17,11 @@
     <link type="shortcut" rel="icon" href="img/favicon.png" />
     <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <!--link
+  <link
     rel="stylesheet"
     href="css/font-awesome/css/fontawesome-all.css"
     type="text/css"
-  /-->
+  />
     <link type="text/css" href="css/live-tv-slide.css" rel="stylesheet" />
     <link type="text/css" href="css/live-tv.css" rel="stylesheet" />
     <link type="text/css" href="css/live-tv-responsive.css" rel="stylesheet" />
@@ -244,9 +244,23 @@
       </div>
     </footer>
     <div id="mobile-menu">
-      <img src="img/logo-tv.png" alt="" class="logo-tv">
-      <i class="fa fa-bars"></i>
+      <a href="index.html"><img src="img/logo-tv.png" alt="" class="logo-tv"></a> 
+      <i class="fa fa-bars" id="mbl-menu-ctrl"></i>
     </div>
+    <div class="mobile-menu-box" id="menu-box">
+      <ul>
+        <li data-id="2" class="menu-parent-mbl">
+          <a href="sign-up.html" class="" data-id="2">Try Premium 
+          </a>
+        </li>
+        <li data-id="3" class="menu-parent-mbl">
+          <a href="sign-up.html" class="" data-id="3"
+            >Sign in <i class="fa fa-user-circle"></i
+          ></a>
+        </li>
+      </ul>
+    </div>  
+    <script type="text/javascript" src="js/main.js"></script>  
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script>
