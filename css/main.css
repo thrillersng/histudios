@@ -666,8 +666,7 @@ footer h4:after {
   margin: 10px 0px;
   margin-bottom: 0px;
 }
-footer li {
-}
+
 footer li a {
   color: #eee;
   font-size: 14px;
@@ -705,6 +704,8 @@ footer span.tagline {
   font-weight: 600;
   margin-bottom: 10px;
   font-style: italic;
+  float: left;
+  width: 100%;
 }
 h1,
 h2,
@@ -714,6 +715,8 @@ h5,
 h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+  float: left;
+  width: 100%;
 }
 div.title > h3 {
   font-size: 20px;
@@ -2654,4 +2657,111 @@ div#jivo-chat.jivo-fixed-bottom.jivo-offline.jivo-orientation-bottom.container-w
 }
 div#jivo-chat.jivo-fixed-bottom.jivo-offline.jivo-orientation-bottom.container-with-leaf.jivo-animated.offline {
   background-color: rgb(77, 123, 185) !important;
+}
+
+.mobile-menu-box {
+  display: none;
+  float: left;
+  width: 100%;
+  background: #fff;
+  padding: 50px 0px;
+  position: absolute;
+  z-index: 999999;
+  left: 0px;
+  right: auto;
+  top: 70px;
+  bottom: auto;
+}
+.mobile-menu-box ul {
+  position: relative;
+  float: left;
+  margin: 0px;
+}
+.mobile-menu-box li.menu-parent-mbl {
+  color: #333;
+  width: 100%;
+  float: left;
+}
+.mobile-menu-box li.menu-parent-mbl a:link {
+  color: #333;
+  font-size: 18px;
+  line-height: 40px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.mobile-menu-box li.menu-parent-mbl a {
+  color: #333;
+}
+.mobile-menu-box li.menu-parent-mbl i.fa {
+  color: #333;
+}
+.mobile-menu-box li.search {
+  float: left;
+}
+ul.mega-menu-mbl {
+  display: none;
+  background: #fbfbfb;
+  position: relative;
+  margin-top: 5px;
+  width: 110%;
+  margin-left: -40px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+}
+ul.mega-menu-mbl ul {
+  margin-top: 4px;
+  display: block;
+  float: left;
+  margin-left: -40px;
+}
+ul.mega-menu-mbl li {
+  margin-left: 0%;
+  width: 100%;
+}
+
+.mobile-menu-box ul.mega-menu-mbl li a:link {
+  font-size: 16px;
+}
+ul.mega-menu-mbl div.container {
+  padding: 10px 0px;
+  overflow-x: hidden;
+  width: 90%;
+  margin: 0%;
+}
+.mega-menu-mbl h4 {
+  text-align: left;
+  float: left;
+  width: 100%;
+  font-weight: 600;
+}
+.mega-menu-mbl p {
+  text-align: left;
+  line-height: 20px;
+  font-weight: 200;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.mega-menu-mbl form {
+  background: #333;
+  padding: 15px 10px;
+  color: #fff;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  float: left;
+}
+.menu-box {
+  z-index: 10000;
+  position: absolute;
+  top: 70px;
+  background: #fff;
+  padding-top: 25px;
+}
+form {
+  display: block;
+  width: 100%;
+  float: left;
+  position: relative;
 }

@@ -189,11 +189,26 @@
       </div>
     </footer>
     <div id="mobile-menu">
-      <img src="../img/logo.png" alt="" class="logo" />
-      <i class="fa fa-bars"></i>
+      <a href="index.html"
+        ><img src="img/logo-tv.png" alt="" class="logo-tv"
+      /></a>
+      <i class="fa fa-bars" id="mbl-menu-ctrl"></i>
     </div>
-    <script type="text/javascript" src="../js/jquery.js"></script>
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <div class="mobile-menu-box" id="menu-box">
+      <ul>
+        <li data-id="2" class="menu-parent-mbl">
+          <a href="sign-up.html" class="" data-id="2">Try Premium </a>
+        </li>
+        <li data-id="3" class="menu-parent-mbl">
+          <a href="sign-up.html" class="" data-id="3"
+            >Sign in <i class="fa fa-user-circle"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script>
       $(document).ready(function() {
         var clickEvent = false;
@@ -232,8 +247,8 @@
         $("#myCarousel .list-group-item").outerHeight(triggerheight);
       });
     </script>
-    <script type="text/javascript" src="../js/news-ticker.js"></script>
-    <script type="text/javascript" src="../js/animate.js"></script>
+    <script type="text/javascript" src="js/news-ticker.js"></script>
+    <script type="text/javascript" src="js/animate.js"></script>
 
     <script>
       function minusWidth(

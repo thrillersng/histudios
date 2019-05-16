@@ -321,57 +321,156 @@
         </div>
       </div>
     </footer>
-    <div class="music_player">
-      <div class="container">
-        <div class="btn1 controls">
-          <i class="fa fa-backward"></i>
-        </div>
-        <div class="btnPlay controls" id="playMusic">
-          <i class="fa fa-play"></i>
-        </div>
-        <div class="btnStop controls">
-          <i class="fa fa-pause"></i>
-        </div>
-        <div class="btn2 controls">
-          <i class="fa fa-forward"></i>
-        </div>
-        <div class="btnVolOn controls">
-          <i class="fa fa-volume-up"></i>
-        </div>
-        <div class="btnVolOff controls">
-          <i class="fa fa-volume-off"></i>
-        </div>
-        <div class="btnLoop controls">
-          <i class="fa fa-retweet"></i>
-        </div>
-        <input
-          type="range"
-          onchange="setVolume()"
-          id="volume1"
-          min="0"
-          max="1"
-          step="0.01"
-          value="0.5"
-        />
-        <span id="currtime">0:00</span>
-        <progress id="seek-obj" value="0" max="1"></progress>
-        <span id="tracktime">0:00</span>
-        <span id="trackslider" class="scrollname"></span>
-        <audio
-          id="player"
-          preload="auto"
-          controls="controls"
-          type="audio/mpeg"
-          ontimeupdate="displayTime()"
-        >
-          <source src="" type="audio/mpeg" />
-        </audio>
-      </div>
-      <span class="min-player"> </span>
-    </div>
     <div id="mobile-menu">
       <img src="img/logo.png" alt="" class="logo" />
-      <i class="fa fa-bars"></i>
+      <i class="fa fa-bars" id="mbl-menu-ctrl"></i>
+    </div>
+    <div class="mobile-menu-box" id="menu-box">
+      <ul>
+        <li data-id="2" class="menu-parent-mbl">
+          <a href="#" class="menu-parent-mbl" data-id="2"
+            >About Us <i class="fa fa-angle-down"></i
+          ></a>
+          <ul data-id="2" class="mega-menu-mbl fallDown bordered-top">
+            <div class="container menu-container" data-id="2">
+              <div class="col-md-3">
+                <h4>about us</h4>
+                <ul>
+                  <li><a href="about.html">Who we are</a></li>
+                  <li><a href="about.html">our vision</a></li>
+                  <li><a href="about.html">our mission </a></li>
+                  <li><a href="about.html">our core values</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li data-id="3" class="menu-parent-mbl">
+          <a href="tv.html" class="menu-parent-mbl" data-id="3"
+            >Hi Impact TV <i class="fa fa-angle-down"></i
+          ></a>
+          <ul data-id="3" class="mega-menu-mbl fallDown bordered-top">
+            <div class="container menu-container">
+              <div class="col-md-3">
+                <h4>Entertainment</h4>
+                <ul>
+                  <li>
+                    <a href="programme-detail.html">America’s got talent</a>
+                  </li>
+                  <li><a href="programme-detail.html">Hole in the wall</a></li>
+                  <li><a href="programme-detail.html">Match game</a></li>
+                  <li><a href="programme-detail.html">X-Factor</a></li>
+                  <li><a href="programme-detail.html">Fan’s corner</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h4>Telenovelas</h4>
+                <ul>
+                  <li><a href="programme-detail.html">So much love</a></li>
+                  <li><a href="programme-detail.html">Paloma and Diego</a></li>
+                  <li><a href="programme-detail.html">Pasion Morena</a></li>
+                  <li>
+                    <a href="programme-detail.html">The gardener’s daughter</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h4>Educational</h4>
+                <ul>
+                  <li>
+                    <a href="programme-detail.html">French for beginners</a>
+                  </li>
+                  <li><a href="programme-detail.html">Ankara craft</a></li>
+                  <li>
+                    <a href="programme-detail.html">Syllabus for excellence</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h4>Inspirational</h4>
+                <ul>
+                  <li><a href="programme-detail.html">Legends</a></li>
+                  <li><a href="programme-detail.html">Yours truly</a></li>
+                  <li><a href="programme-detail.html">Against all odds</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li data-id="4" class="menu-parent-mbl">
+          <a href="#" class="menu-parent-mbl" data-id="4"
+            >Hi Impact Radio <i class="fa fa-angle-down"></i
+          ></a>
+          <ul data-id="4" class="mega-menu-mbl fallDown bordered-top">
+            <div class="container menu-container"></div>
+          </ul>
+        </li>
+        <li data-id="5" class="menu-parent-mbl">
+          <a href="about.html" class="menu-parent-mbl" data-id="5"
+            >Advertise <i class="fa fa-angle-down"></i
+          ></a>
+          <ul data-id="5" class="mega-menu-mbl fallDown bordered-top">
+            <div class="container menu-container">
+              <div class="col-md-3">
+                <ul>
+                  <li><a href="about.html">Advertise</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li data-id="6" class="menu-parent-mbl">
+          <a href="about.html">Careers<i class="fa fa-angle-down"></i></a>
+          <ul data-id="6" class="mega-menu-mbl fallDown bordered-top">
+            <div class="container menu-container">
+              <div class="col-md-3">
+                <ul>
+                  <li><a href="about.html">Careers</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li data-id="7" class="menu-parent-mbl">
+          <a href="contact.html">Contact</a>
+          <ul data-id="7" class="mega-menu-mbl fallDown bordered-top">
+            <div class="container menu-container"></div>
+            <div class="row list-top-bar">
+              <div class="col-md-12"></div>
+            </div>
+          </ul>
+        </li>
+        <li data-id="8" class="search">
+          <a href="#"><i class="fa fa-search"></i></a>
+          <ul data-id="8" class="mega-menu-mbl fallDown bordered-top">
+            <div class="container menu-container">
+              <div class="col-md-3">
+                <form action="">
+                  <input
+                    type="search"
+                    id="search"
+                    name="search"
+                    class="form-control"
+                  />
+                  <button id="" name="" class="btn btn-primary">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="row list-top-bar">
+              <div class="col-md-12">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Impedit dolores vitae culpa ipsa recusandae atque enim
+                  corrupti fuga excepturi, animi molestias sed reiciendis vel
+                  adipisci error quasi ea eos qui?
+                </p>
+              </div>
+            </div>
+          </ul>
+        </li>
+      </ul>
     </div>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -415,6 +514,7 @@
     </script>
     <script type="text/javascript" src="js/news-ticker.js"></script>
     <script type="text/javascript" src="js/animate.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 
     <script>
       function minusWidth(
