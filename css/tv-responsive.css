@@ -315,6 +315,9 @@ div {
   }
 }
 @media (max-width: 460px) {
+  .tv-box {
+    width: 300px;
+  }
   header div.container {
     padding: 0px 20px;
     width: 100%;
@@ -332,6 +335,9 @@ div {
   }
   .carousel-caption h4 {
     width: 90%;
+  }
+  .carousel-caption h4.programme-title {
+    font-size: 20px;
   }
   div.menu ul {
     margin-top: 0px;
@@ -406,9 +412,9 @@ div {
   }
   .carousel-caption div.banner-content {
     margin-left: 0%;
-    top: 35%;
+    bottom: 0%;
     width: 80%;
-    height: 100px;
+    height: 150px;
   }
   .carousel-caption span.programme {
     display: none;
@@ -426,15 +432,15 @@ div {
     padding: 0px;
     width: 100%;
   }
+  div.banner-socials {
+    padding: 0px;
+  }
   .preview-box {
     width: 250px;
     height: 250px;
   }
   .preview-box span {
     line-height: 250px;
-  }
-  div.banner-socials {
-    padding: 0px;
   }
   #tracktime {
     display: none;
