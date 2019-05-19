@@ -44,6 +44,20 @@ a:hover {
   text-decoration: none;
   color: #09f;
 }
+a.active{
+  color: #09f;
+}
+a.active::after{
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #09f;
+  content: '';
+  position: relative;
+  margin-bottom: 15px;
+  margin-top: -15px;
+  z-index: 100;
+}
 .btn-primary {
   background: #09f;
   color: #fff;
@@ -410,7 +424,7 @@ nav li:hover a:before {
   animation-duration: 0.5s;
 }
 nav li:first-child {
-  margin-left: 2%;
+  margin-left: 5%;
 }
 nav li:first-child:hover {
   background: none;
