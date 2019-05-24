@@ -44,6 +44,20 @@ a:hover {
   text-decoration: none;
   color: #c4c4c4;
 }
+a.active{
+  color: #09f;
+}
+a.active::after{
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #09f;
+  content: '';
+  position: relative;
+  margin-bottom: 15px;
+  margin-top: -15px;
+  z-index: 100;
+}
 .btn-primary {
   background: #09f;
   color: #fff;
@@ -420,7 +434,7 @@ li.last a {
   padding: 0px;
 }
 nav a {
-  padding: 0px 20px;
+  padding: 0px 15px;
   line-height: 65px;
   display: block;
   color: #fff;
@@ -3103,71 +3117,7 @@ div.prem-ad img {
 .mobile-menu-box li.menu-parent-mbl span.call-to-action a:link {
   font-size: 13px;
   line-height: 20px;
-}
-ul.mega-menu-mbl {
-  display: none;
-  background: #2a2a2d;
-  position: relative;
-  margin-top: 5px;
-  width: 110%;
-  margin-left: -40px;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-}
-ul.mega-menu-mbl ul {
-  margin-top: 4px;
-  display: block;
-  float: left;
-  margin-left: -40px;
-}
-ul.mega-menu-mbl li {
-  margin-left: 0%;
-  width: 100%;
-}
-
-.mobile-menu-box ul.mega-menu-mbl li a:link {
-  font-size: 16px;
-}
-ul.mega-menu-mbl div.container {
-  padding: 10px 0px;
-  overflow-x: hidden;
-  width: 90%;
-  margin: 0%;
-}
-.mega-menu-mbl h4 {
-  text-align: left;
-  float: left;
-  width: 100%;
-  font-weight: 600;
-  color: #fff;
-}
-.mega-menu-mbl p {
-  text-align: left;
-  line-height: 20px;
-  font-weight: 200;
-  text-transform: capitalize;
-  font-size: 14px;
-  color: #fff;
-}
-.mega-menu-mbl .col-md-3,
-.col-md-4,
-.col-md-6,
-.col-md-8,
-.col-md-12 {
-  margin: 5px 0px !important;
-}
-.mega-menu-mbl form {
-  background: #eee;
-  padding: 15px 10px;
-  color: #fff;
-  border-radius: 4px;
-  display: block;
-  width: 100%;
-  float: left;
-}
-.menu-box {
+}.menu-box {
   z-index: 10000;
   position: absolute;
   top: 70px;
