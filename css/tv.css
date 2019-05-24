@@ -3095,4 +3095,5 @@ div.prog-detail {
   padding: 10px;
   background: linear-gradient(#0068ae, #00395f);
   font-weight: bold;
+  width: 100%;
 }
