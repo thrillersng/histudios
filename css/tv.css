@@ -44,15 +44,15 @@ a:hover {
   text-decoration: none;
   color: #09f;
 }
-a.active{
+a.active {
   color: #09f;
 }
-a.active::after{
+a.active::after {
   display: block;
   width: 100%;
   height: 2px;
   background: #09f;
-  content: '';
+  content: "";
   position: relative;
   margin-bottom: 15px;
   margin-top: -15px;
@@ -403,7 +403,7 @@ li.last a {
   float: right;
 }
 nav a {
-  padding: 0px 15px;
+  padding: 0px 12px;
   line-height: 65px;
   display: block;
   color: #fff;
@@ -2206,7 +2206,7 @@ ul.products-list li span {
   line-height: 155px;
   font-size: 40px;
   padding: 5px;
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.45));
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2));
   transition: all 0.5s;
   -moz-transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -3079,4 +3079,21 @@ ul.mega-menu-mbl div.container {
   top: 70px;
   background: #1e1e20;
   padding-top: 25px;
+}
+div.prog-box {
+  border: 1px solid #333;
+  padding: 0px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+div.prog-box img {
+  width: 100%;
+  margin: 0px;
+}
+div.prog-detail {
+  padding: 10px;
+  background: linear-gradient(#0068ae, #00395f);
+  font-weight: bold;
+  width: 100%;
 }
