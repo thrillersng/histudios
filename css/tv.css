@@ -248,6 +248,7 @@ table span.yellow {
   color: #333;
   margin: -35px 0px;
 }
+
 col {
   background: #09f;
   font-weight: 600;
@@ -257,6 +258,34 @@ col:nth-child(2) {
 }
 col:nth-child(3) {
   background: #0c5ac6;
+}
+
+table.type-2 col {
+  background: #1d5ba7;
+  font-weight: 600;
+}
+table.type-2 col:nth-child(2) {
+  background: #ffd505;
+}
+table.type-2 col:nth-child(2) td {
+  color: #000;
+}
+table.type-2 col:nth-child(3) {
+  background: #5ee53c;
+}
+table.type-2 col:nth-child(3) {
+  color: #000;
+}
+table.type-2 td {
+  border-left: 1px solid #000;
+  color: #000;
+}
+table.type-2 tr td:first-child {
+  color: #fff;
+}
+table.type-2 tr:nth-child(even) td {
+  background: #fff;
+  color: #000;
 }
 col:nth-child(4) {
   background: #0a4daa;
