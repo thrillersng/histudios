@@ -248,11 +248,44 @@ table span.yellow {
   color: #333;
   margin: -35px 0px;
 }
+
+col {
+  background: #09f;
+  font-weight: 600;
+}
 col:nth-child(2) {
   background: #0e69e8;
 }
 col:nth-child(3) {
   background: #0c5ac6;
+}
+
+table.type-2 col {
+  background: #1d5ba7;
+  font-weight: 600;
+}
+table.type-2 col:nth-child(2) {
+  background: #ffd505;
+}
+table.type-2 col:nth-child(2) td {
+  color: #000;
+}
+table.type-2 col:nth-child(3) {
+  background: #5ee53c;
+}
+table.type-2 col:nth-child(3) {
+  color: #000;
+}
+table.type-2 td {
+  border-left: 1px solid #000;
+  color: #000;
+}
+table.type-2 tr td:first-child {
+  color: #fff;
+}
+table.type-2 tr:nth-child(even) td {
+  background: #fff;
+  color: #000;
 }
 col:nth-child(4) {
   background: #0a4daa;
@@ -280,6 +313,29 @@ col:nth-child(11) {
 }
 col:nth-child(12) {
   background: none;
+}
+table.prog-sch {
+  text-align: left;
+  font-weight: 500;
+}
+table.prog-sch th {
+  text-align: center;
+  font-size: 17px;
+  padding: 15px 0px;
+}
+table.prog-sch th span {
+  width: 70%;
+  text-align: center;
+  border-radius: 40px;
+  padding: 5px 0px;
+  font-size: 14px;
+  margin: 5px 15%;
+  color: #000;
+  background: #fff;
+  margin-top: 10px;
+}
+table.prog-sch td {
+  padding-left: 30px;
 }
 .form-group {
   width: 100%;
