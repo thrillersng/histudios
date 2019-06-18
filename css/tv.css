@@ -1058,13 +1058,14 @@ li:hover {
 }
 .music_player {
   display: block;
-  /* background: #cd390d; */
+  background: rgba(0, 0, 0, 0.55); 
   width: 90px;
   height: 115px;
+  border-radius: 25px;
   overflow: hidden;
   position: fixed;
   right: 20px;
-  z-index: 99999;
+  z-index: 9999999;
   bottom: 15%;
   text-align: center;
   text-transform: uppercase;
@@ -1085,7 +1086,8 @@ li:hover {
   color: #fff;
   font-size: 15px;
   padding: 16px 17px;
-  background: #141413;
+  /*background: #141413;*/
+  background: #ff4108;
   border-radius: 100px;
 }
 .controls i.fa-volume-off {

@@ -434,7 +434,7 @@ li.last a {
   padding: 0px;
 }
 nav a {
-  padding: 0px 15px;
+  padding: 0px 12px;
   line-height: 65px;
   display: block;
   color: #fff;
@@ -1034,13 +1034,14 @@ li:hover {
 
 .music_player {
   display: block;
-  /* background: #cd390d; */
+  background: rgba(0, 0, 0, 0.55); 
   width: 90px;
   height: 115px;
+  border-radius: 25px;
   overflow: hidden;
   position: fixed;
   right: 20px;
-  z-index: 99999;
+  z-index: 9999999;
   bottom: 15%;
   text-align: center;
   text-transform: uppercase;
@@ -1051,7 +1052,6 @@ li:hover {
   -o-transition: all 500ms linear;
   transition: all 500ms linear;
 }
-
 .music_player span {
   margin: 0px 15px;
   padding: 5px;
@@ -1061,16 +1061,15 @@ li:hover {
   color: #fff;
   font-size: 15px;
   padding: 16px 17px;
-  background: #141413;
+  /*background: #141413;*/
+  background: #ff4108;
   border-radius: 100px;
-  margin: 2px 3px;
 }
 .controls i.fa-volume-off {
   padding: 16px 20px;
 }
 .btnPlay i.fa {
   font-size: 22px !important;
-  padding: 20px 22px;
 }
 .btnStop i.fa {
   font-size: 22px;
