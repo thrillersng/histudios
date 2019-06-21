@@ -421,10 +421,16 @@
       </ul>
     </div>  
     <div id="loader"><i class='fa fa-spinner fa-spin'></i> <span class='loader'>loading...</span></div>
-    <div id="modal">
+    <div id="modal" class="modal">
         <i class="fa fa-times" id="clsModal" onclick="clsModal()"></i>
         <div class="pic-holder" id="holder">
+          <img src='img/gallery/1.jpg' class="galImg" alt='' data-id="1">
+          <img src='img/gallery/2.jpg' class="galImg"  alt='' data-id="2">
+          <img src='img/gallery/3.jpg' class="galImg"  alt='' data-id="3">
+          <img src='img/gallery/4.jpg' class="galImg"  alt='' data-id="4">
         </div>
+        <a href="#" onclick="backImg()" class="pointers"><i class="fa fa-angle-left pointers"></i></a>
+        <a href="#" onclick="nextImg()" class="pointers right-align"><i class="fa fa-angle-right pointers"></i></a>
     </div>    
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -468,6 +474,10 @@
 
       function clsModal(){
           document.getElementById("modal").style.display='none';
+          var targetDiv = document.querySelectorAll(".galImg");
+          for( var i = 0; i < targetDiv.length; i++){
+            targetDiv[i].style.display="none";
+          }          
       }	
 
       function lazyLoadGal(){
@@ -503,11 +513,48 @@
           event.preventDefault();
 
           var galID = obj.getAttribute("href");
-          var return_data = "<div class='col-md-8'><img src='img/gallery/" +galID+".jpg' alt=''></div><div class='col-md-4'><h4>Hi Impact Television Gallery</h4> <p>Brief description of the current image on display</p></div>";
-          document.getElementById("holder").innerHTML = " ";
-          document.getElementById("holder").innerHTML = return_data;
+          var targetDiv = document.querySelectorAll(".galImg");
+          for( var i = 0; i < targetDiv.length; i++){
+           if( obj.getAttribute("href") == targetDiv[i].getAttribute('data-id') ){
+            targetDiv[i].className += " current";
+           }
+          }
           document.getElementById("modal").style.display='block';
       }      
+
+      //function to move the form pages left and right for easy user access
+      var slideIndex = 1;
+
+      function nextImg() {
+        event.preventDefault();
+
+        var i;
+        var slides = document.getElementsByClassName("galImg");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].classList.remove("current");
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].className += " current";
+      }
+
+      function backImg() {
+        event.preventDefault();
+
+        var i;
+        var slides = document.getElementsByClassName("galImg");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].classList.remove("current");
+        }
+        slideIndex--;
+        if (slideIndex < slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].className += " current";
+      }
+
     </script>
     <script type="text/javascript" src="js/news-ticker.js"></script>
     <script type="text/javascript" src="js/animate.js"></script>
@@ -533,271 +580,6 @@
       clsTv.addEventListener("click", function(){
         tvBox.style.bottom="-440px";
       }, false);
-
-
-
-      function minusWidth(
-        sec_container,
-        boxWidth,
-        sec_conWidth,
-        totalBox,
-        boxes,
-        box,
-        backBtn,
-        nextBtn
-      ) {
-        var contMarginLeft = window
-          .getComputedStyle(sec_container)
-          .getPropertyValue("margin-left");
-        contMarginLeft = contMarginLeft.replace("px", "");
-        contMarginLeft = contMarginLeft * 1;
-        //alert(contMarginLeft);
-        var setLeftPos = contMarginLeft * 1 - boxWidth * 1;
-        var sec_contWidth = sec_conWidth * 1 - boxWidth * 3;
-        var sec_contWidth = "-" + sec_contWidth;
-        sec_conWidth = sec_conWidth * 1;
-        //console.log(contMarginLeft);
-        //console.log(sec_contWidth);
-        if (contMarginLeft <= sec_contWidth) {
-          setLeftPos = 0 + "px";
-          sec_container.style.marginLeft = setLeftPos;
-        } else if (contMarginLeft > sec_contWidth) {
-          setLeftPos = setLeftPos + "px";
-          sec_container.style.marginLeft = setLeftPos;
-        }
-        var backBtnDisplay = window
-          .getComputedStyle(backBtn)
-          .getPropertyValue("display");
-        //console.log(backBtnDisplay);
-        if (backBtnDisplay == "none") {
-          backBtn.style.display = "block";
-        } else {
-          //do nothing
-        }
-      }
-
-      function plusWidth(
-        sec_container,
-        boxWidth,
-        sec_conWidth,
-        totalBox,
-        boxes,
-        box,
-        backBtn,
-        nextBtn
-      ) {
-        var contMarginLeft = window
-          .getComputedStyle(sec_container)
-          .getPropertyValue("margin-left");
-        contMarginLeft = contMarginLeft.replace("px", "");
-        //alert(contMarginLeft);
-        var setRightPos = contMarginLeft * 1 + boxWidth * 1;
-        var sec_contWidth = sec_conWidth;
-        var chkWidth = "-" + boxWidth;
-        //console.log(setRightPos);
-        //console.log(sec_contWidth);
-
-        if (contMarginLeft == chkWidth) {
-          var nextBtnDisplay = window
-            .getComputedStyle(nextBtn)
-            .getPropertyValue("display");
-          //console.log(backBtnDisplay);
-          if (nextBtnDisplay == "block") {
-            nextBtn.style.display = "none";
-          } else {
-            //do nothing
-          }
-        }
-        if (contMarginLeft == 0) {
-          //do nothing
-        } else if (contMarginLeft <= sec_contWidth) {
-          setRightPos = setRightPos + "px";
-          sec_container.style.marginLeft = setRightPos;
-        } else {
-          setRightPos = 0 + "px";
-          sec_container.style.marginLeft = setRightPos;
-        }
-      }
-
-      var prevBtn = document.querySelector("a.box-1-prev");
-      prevBtn.addEventListener(
-        "click",
-        function(e) {
-          e.preventDefault();
-          var boxes = document.querySelectorAll(".news-box-1");
-          var box = document.querySelector(".news-box-1");
-          var boxWidth = box.offsetWidth;
-          var totalBox = boxes.length;
-          var sec_conWidth = boxWidth * totalBox;
-          //alert(sec_contWidth);
-          sec_contWidth = sec_conWidth + "px";
-          var sec_container = document.querySelector(".main-box-1");
-          sec_container.style.width = sec_contWidth;
-          var backBtn = document.querySelector("a.box-1-next");
-          var nextBtn = document.querySelector("a.box-1-prev");
-          minusWidth(
-            sec_container,
-            boxWidth,
-            sec_conWidth,
-            totalBox,
-            boxes,
-            box,
-            backBtn,
-            nextBtn
-          );
-        },
-        false
-      );
-
-      var nextBtn = document.querySelector("a.box-1-next");
-      nextBtn.addEventListener(
-        "click",
-        function(e) {
-          e.preventDefault();
-          var boxes = document.querySelectorAll(".news-box-1");
-          var box = document.querySelector(".news-box-1");
-          var boxWidth = box.offsetWidth;
-          var totalBox = boxes.length;
-          var sec_conWidth = boxWidth * totalBox;
-          //alert(sec_contWidth);
-          sec_contWidth = sec_conWidth + "px";
-          var sec_container = document.querySelector(".main-box-1");
-          sec_container.style.width = sec_contWidth;
-          var nextBtn = document.querySelector("a.box-1-next");
-          var backBtn = document.querySelector("a.box-1-prev");
-          plusWidth(
-            sec_container,
-            boxWidth,
-            sec_conWidth,
-            totalBox,
-            boxes,
-            box,
-            backBtn,
-            nextBtn
-          );
-        },
-        false
-      );
-
-      var prevBtn = document.querySelector("a.box-2-prev");
-      prevBtn.addEventListener(
-        "click",
-        function(e) {
-          e.preventDefault();
-          var boxes = document.querySelectorAll(".news-box-2");
-          var box = document.querySelector(".news-box-2");
-          var boxWidth = box.offsetWidth;
-          var totalBox = boxes.length;
-          var sec_conWidth = boxWidth * totalBox;
-          //alert(sec_contWidth);
-          sec_contWidth = sec_conWidth + "px";
-          var sec_container = document.querySelector(".main-box-2");
-          sec_container.style.width = sec_contWidth;
-          var backBtn = document.querySelector("a.box-2-next");
-          var nextBtn = document.querySelector("a.box-2-prev");
-          minusWidth(
-            sec_container,
-            boxWidth,
-            sec_conWidth,
-            totalBox,
-            boxes,
-            box,
-            backBtn,
-            nextBtn
-          );
-        },
-        false
-      );
-
-      var nextBtn = document.querySelector("a.box-2-next");
-      nextBtn.addEventListener(
-        "click",
-        function(e) {
-          e.preventDefault();
-          var boxes = document.querySelectorAll(".news-box-2");
-          var box = document.querySelector(".news-box-2");
-          var boxWidth = box.offsetWidth;
-          var totalBox = boxes.length;
-          var sec_conWidth = boxWidth * totalBox;
-          //alert(sec_contWidth);
-          sec_contWidth = sec_conWidth + "px";
-          var sec_container = document.querySelector(".main-box-2");
-          sec_container.style.width = sec_contWidth;
-          var nextBtn = document.querySelector("a.box-2-next");
-          var backBtn = document.querySelector("a.box-2-prev");
-          plusWidth(
-            sec_container,
-            boxWidth,
-            sec_conWidth,
-            totalBox,
-            boxes,
-            box,
-            backBtn,
-            nextBtn
-          );
-        },
-        false
-      );
-
-      var prevBtn = document.querySelector("a.box-3-prev");
-      prevBtn.addEventListener(
-        "click",
-        function(e) {
-          e.preventDefault();
-          var boxes = document.querySelectorAll(".news-box-3");
-          var box = document.querySelector(".news-box-3");
-          var boxWidth = box.offsetWidth;
-          var totalBox = boxes.length;
-          var sec_conWidth = boxWidth * totalBox;
-          //alert(sec_contWidth);
-          sec_contWidth = sec_conWidth + "px";
-          var sec_container = document.querySelector(".main-box-3");
-          sec_container.style.width = sec_contWidth;
-          var backBtn = document.querySelector("a.box-3-next");
-          var nextBtn = document.querySelector("a.box-3-prev");
-          minusWidth(
-            sec_container,
-            boxWidth,
-            sec_conWidth,
-            totalBox,
-            boxes,
-            box,
-            backBtn,
-            nextBtn
-          );
-        },
-        false
-      );
-
-      var nextBtn = document.querySelector("a.box-3-next");
-      nextBtn.addEventListener(
-        "click",
-        function(e) {
-          e.preventDefault();
-          var boxes = document.querySelectorAll(".news-box-3");
-          var box = document.querySelector(".news-box-3");
-          var boxWidth = box.offsetWidth;
-          var totalBox = boxes.length;
-          var sec_conWidth = boxWidth * totalBox;
-          //alert(sec_contWidth);
-          sec_contWidth = sec_conWidth + "px";
-          var sec_container = document.querySelector(".main-box-3");
-          sec_container.style.width = sec_contWidth;
-          var nextBtn = document.querySelector("a.box-3-next");
-          var backBtn = document.querySelector("a.box-3-prev");
-          plusWidth(
-            sec_container,
-            boxWidth,
-            sec_conWidth,
-            totalBox,
-            boxes,
-            box,
-            backBtn,
-            nextBtn
-          );
-        },
-        false
-      );
     </script>
   </body>
 </html>
