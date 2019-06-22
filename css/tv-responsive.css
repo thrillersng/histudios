@@ -213,6 +213,12 @@ div {
     line-height: 70px;
     font-size: 20px;
   }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
   div.view-box iframe {
     width: 100% !important;
     height: auto !important;

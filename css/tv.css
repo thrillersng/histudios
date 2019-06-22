@@ -2186,6 +2186,12 @@ div.pic-holder h3:after {
   background: none;
   border: 1px solid #fff;
 }
+.desktop{
+  display: block;
+}
+.mobile{
+  display: none;
+}
 .contact-box {
   height: 200px;
 }
