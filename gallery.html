@@ -477,7 +477,7 @@
           var targetDiv = document.querySelectorAll(".galImg");
           for( var i = 0; i < targetDiv.length; i++){
             targetDiv[i].style.display="none";
-          }          
+          }        
       }	
 
       function lazyLoadGal(){
@@ -516,6 +516,7 @@
           var targetDiv = document.querySelectorAll(".galImg");
           for( var i = 0; i < targetDiv.length; i++){
            if( obj.getAttribute("href") == targetDiv[i].getAttribute('data-id') ){
+            targetDiv[i].style.display="block";
             targetDiv[i].className += " current";
            }
           }
@@ -531,12 +532,14 @@
         var i;
         var slides = document.getElementsByClassName("galImg");
         for (i = 0; i < slides.length; i++) {
+          slides[i].style.display="none";
           slides[i].classList.remove("current");
         }
         slideIndex++;
         if (slideIndex > slides.length) {
           slideIndex = 1;
         }
+        slides[slideIndex - 1].style.display="block";
         slides[slideIndex - 1].className += " current";
       }
 
@@ -546,12 +549,14 @@
         var i;
         var slides = document.getElementsByClassName("galImg");
         for (i = 0; i < slides.length; i++) {
+          slides[i].style.display="none";
           slides[i].classList.remove("current");
         }
         slideIndex--;
-        if (slideIndex < slides.length) {
-          slideIndex = 1;
+        if ((slideIndex == 0) || (slideIndex == 1)) {
+          slideIndex = slides.length;
         }
+        slides[slideIndex - 1].style.display="block";
         slides[slideIndex - 1].className += " current";
       }
 
@@ -575,10 +580,12 @@
       var clsTv = document.getElementById("clsTv");
       var tvBox = document.getElementById("livetv");
       playBtn.addEventListener("click", function(){
+        tvBox.style.display="block";
         tvBox.style.bottom="40px";
       }, false);
       clsTv.addEventListener("click", function(){
         tvBox.style.bottom="-440px";
+        tvBox.style.display="none";
       }, false);
     </script>
   </body>

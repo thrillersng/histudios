@@ -2140,11 +2140,14 @@ div.modal a.pointers {
   top: 45%;
   color: #fff;
   left: 10%;
-  font-size: 30px;
+  font-size: 22px;
+  height: 42px;
+  line-height: 42px;
   z-index: 99999;
-  background: #000;
-  width: 40px;
+  background: rgba(0, 0, 0, 0.56);
+  width: 42px;
   text-align: center;
+  border-radius: 60px;
 }
 div.modal a.right-align {
   left: auto;
@@ -2164,11 +2167,14 @@ div.pic-holder h3:after {
   margin-top: 10px;
 }
 .ld-btn {
-  margin: 5px 40%;
+  margin: 0px auto;
   position: relative;
   display: block;
-  float: left;
-  width: 20%;
+  float: none;
+  height: 40px;
+  clear: both;
+  width: 300px;
+  text-transform: capitalize;
   color: #fff;
   background: #777;
   text-align: center;
@@ -2741,13 +2747,14 @@ div.col-md-3.col {
   float: left;
 }
 .tv-box {
+  display: none;
   position: fixed;
   right: 10px;
   bottom: -440px;
   width: 360px;
   height: 210px;
   background: #000;
-  z-index: 999999;
+  z-index: 9999999;
   padding: 0px;
   transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -3186,4 +3193,17 @@ div.prog-detail {
   background: linear-gradient(#0068ae, #00395f);
   font-weight: bold;
   width: 100%;
+}
+
+@media(max-width: 640px){
+  div.pic-holder img {
+    height: auto;
+    margin: 0px auto;
+    display: none;
+    width: 100%;
+  }
+  div.pic-holder img.current {
+    display: block;
+    width: 100%;
+  }
 }
